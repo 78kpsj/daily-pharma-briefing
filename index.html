@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="K-바이오 Daily Report 2026.05.02 — 바이오·제약 산업 일간 브리핑">
+<title>K-바이오 Daily Report — 2026.05.02</title>
+<style>
+/* ── 외부 의존성 없는 시스템 폰트 스택 ── */
+:root {
+  --font-sans: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo",
+               "Noto Sans KR", "Malgun Gothic", "맑은 고딕", sans-serif;
+  --font-serif: Georgia, "Apple Myungjo", "HY신명조", "나눔명조", serif;
+  --font-mono: "SF Mono", "Fira Code", "Cascadia Code", Consolas, monospace;
+
+  --bg:          #F7F4EE;
+  --bg-card:     #FDFCF9;
+  --ink:         #1A1714;
+  --ink-2:       #4A4540;
+  --ink-3:       #8A8480;
+  --accent:      #C8401A;
+  --blue:        #1B4F8A;
+  --blue-soft:   #E8EFF8;
+  --green:       #1A6B3A;
+  --green-soft:  #E6F3EC;
+  --purple:      #4B2F8A;
+  --purple-soft: #EEEAF8;
+  --amber:       #8A5A0A;
+  --amber-soft:  #FBF3E3;
+  --teal:        #0E6B5A;
+  --teal-soft:   #E3F4F1;
+  --coral:       #8A3020;
+  --coral-soft:  #FAEEEB;
+  --border:      rgba(26,23,20,0.10);
+  --border-md:   rgba(26,23,20,0.18);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 16px; }
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: 15px;
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+  word-break: keep-all;
+}
+
+/* ── MASTHEAD ── */
+.masthead {
+  background: var(--ink);
+  color: var(--bg);
+  position: relative;
+  overflow: hidden;
+}
+.masthead-deco {
+  position: absolute; right: -60px; top: -40px;
+  width: 380px; height: 380px; border-radius: 50%;
+  border: 1px solid rgba(247,244,238,0.04); pointer-events: none;
+}
+.masthead-deco::after {
+  content: ''; position: absolute; inset: 40px;
+  border-radius: 50%; border: 1px solid rgba(247,244,238,0.04);
+}
+.masthead-inner {
+  max-width: 800px; margin: 0 auto;
+  padding: 3rem 1.5rem 2.5rem;
+  position: relative; z-index: 2;
+}
+.masthead-rule {
+  width: 40px; height: 3px;
+  background: var(--accent); margin-bottom: 1.4rem;
+}
+.masthead-kicker {
+  font-family: var(--font-mono);
+  font-size: 10px; letter-spacing: 0.18em;
+  color: rgba(247,244,238,0.45); text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+.masthead-title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.9rem, 5vw, 3.1rem);
+  font-weight: 700; line-height: 1.1;
+  letter-spacing: -0.02em; margin-bottom: 0.75rem;
+}
+.masthead-title span { color: var(--accent); }
+.masthead-meta {
+  display: flex; align-items: center;
+  gap: 1.2rem; flex-wrap: wrap; margin-top: 1.1rem;
+}
+.masthead-date {
+  font-family: var(--font-mono);
+  font-size: 11px; color: rgba(247,244,238,0.55);
+}
+.source-pills { display: flex; gap: 5px; flex-wrap: wrap; }
+.pill {
+  font-family: var(--font-mono); font-size: 10px;
+  padding: 2px 8px; border-radius: 20px;
+  border: 1px solid rgba(247,244,238,0.15);
+  color: rgba(247,244,238,0.5);
+}
+.pill-new {
+  border-color: rgba(200,64,26,0.5);
+  color: #F0A090;
+  background: rgba(200,64,26,0.1);
+}
+
+/* ── STATS BAR ── */
+.stats-bar { background: var(--accent); }
+.stats-grid {
+  max-width: 800px; margin: 0 auto;
+  display: grid; grid-template-columns: repeat(4, 1fr);
+}
+.stat-cell {
+  padding: 1rem 1.3rem;
+  border-right: 1px solid rgba(255,255,255,0.18);
+  color: #fff;
+}
+.stat-cell:last-child { border-right: none; }
+.stat-val {
+  font-family: var(--font-serif);
+  font-size: 1.25rem; font-weight: 700;
+  line-height: 1; margin-bottom: 3px;
+}
+.stat-lbl {
+  font-family: var(--font-mono);
+  font-size: 9px; opacity: 0.72; letter-spacing: 0.04em;
+}
+
+/* ── MAIN ── */
+.main { max-width: 800px; margin: 0 auto; padding: 2.5rem 1.5rem; }
+
+/* ── SECTION ── */
+.sec {
+  margin-bottom: 2.5rem;
+  opacity: 0; transform: translateY(18px);
+  animation: up 0.45s ease forwards;
+}
+.sec:nth-child(1)  { animation-delay: 0.04s; }
+.sec:nth-child(2)  { animation-delay: 0.10s; }
+.sec:nth-child(3)  { animation-delay: 0.16s; }
+.sec:nth-child(4)  { animation-delay: 0.22s; }
+.sec:nth-child(5)  { animation-delay: 0.28s; }
+.sec:nth-child(6)  { animation-delay: 0.34s; }
+.sec:nth-child(7)  { animation-delay: 0.40s; }
+.sec:nth-child(8)  { animation-delay: 0.46s; }
+.sec:nth-child(9)  { animation-delay: 0.52s; }
+@keyframes up { to { opacity: 1; transform: none; } }
+
+.sec-head {
+  display: flex; align-items: baseline;
+  gap: 10px; margin-bottom: 0.9rem;
+  padding-bottom: 0.65rem;
+  border-bottom: 1px solid var(--border);
+  flex-wrap: wrap;
+}
+.sec-num {
+  font-family: var(--font-mono);
+  font-size: 10px; color: var(--ink-3); min-width: 22px;
+}
+.sec-title {
+  font-family: var(--font-serif);
+  font-size: 1.08rem; font-weight: 600; flex: 1;
+  line-height: 1.35;
+}
+
+/* ── BADGE ── */
+.badge {
+  display: inline-flex; align-items: center;
+  font-family: var(--font-mono); font-size: 9px;
+  font-weight: 500; padding: 2px 8px;
+  border-radius: 20px; white-space: nowrap;
+  letter-spacing: 0.04em;
+}
+.b-danger  { background: var(--coral-soft);  color: var(--coral); }
+.b-success { background: var(--green-soft);  color: var(--green); }
+.b-info    { background: var(--blue-soft);   color: var(--blue); }
+.b-purple  { background: var(--purple-soft); color: var(--purple); }
+.b-amber   { background: var(--amber-soft);  color: var(--amber); }
+.b-teal    { background: var(--teal-soft);   color: var(--teal); }
+.b-accent  { background: var(--accent); color: #fff; }
+
+/* ── CARD ── */
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1.1rem 1.3rem;
+  margin-bottom: 0.7rem;
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+.card:hover { box-shadow: 0 5px 22px rgba(26,23,20,0.10); border-color: var(--border-md); }
+.card:last-child { margin-bottom: 0; }
+.card-head {
+  display: flex; align-items: flex-start;
+  justify-content: space-between; gap: 10px; margin-bottom: 0.55rem;
+}
+.card-title { font-weight: 500; font-size: 14px; line-height: 1.4; flex: 1; }
+.card-body  { font-size: 13px; color: var(--ink-2); line-height: 1.72; }
+.card-foot  {
+  margin-top: 0.55rem;
+  font-family: var(--font-mono); font-size: 10px; color: var(--ink-3);
+}
+
+/* ── HIGHLIGHT ── */
+.hl {
+  background: var(--bg-card);
+  border-left: 3px solid var(--accent);
+  border-radius: 0 8px 8px 0;
+  padding: 0.9rem 1.1rem; margin-bottom: 0.7rem;
+}
+.hl.green  { border-left-color: var(--green); }
+.hl.purple { border-left-color: var(--purple); }
+.hl.teal   { border-left-color: var(--teal); }
+.hl-title  { font-weight: 500; font-size: 13px; margin-bottom: 4px; }
+.hl-body   { font-size: 12.5px; color: var(--ink-2); line-height: 1.72; }
+
+/* ── BANNER (source indicator) ── */
+.banner {
+  display: flex; align-items: center; gap: 7px;
+  border-radius: 7px; padding: 6px 11px;
+  margin-bottom: 0.7rem;
+  font-family: var(--font-mono); font-size: 10px;
+  letter-spacing: 0.02em;
+}
+.banner-dot { width: 5px; height: 5px; border-radius: 50%; flex-shrink: 0; }
+.ban-bios   { background: var(--purple-soft); border: 1px solid rgba(75,47,138,0.14); color: var(--purple); }
+.ban-bios .banner-dot { background: var(--purple); }
+.ban-times  { background: var(--teal-soft);   border: 1px solid rgba(14,107,90,0.14);  color: var(--teal); }
+.ban-times .banner-dot { background: var(--teal); }
+.ban-globe  { background: var(--amber-soft);  border: 1px solid rgba(138,90,10,0.14);  color: var(--amber); }
+
+/* ── PROTAC FEATURE CARD ── */
+.protac {
+  background: var(--ink); color: var(--bg);
+  border-radius: 12px; padding: 1.7rem;
+  margin-bottom: 0.7rem; position: relative; overflow: hidden;
+}
+.protac::before {
+  content: ''; position: absolute;
+  right: -55px; bottom: -55px;
+  width: 210px; height: 210px;
+  border-radius: 50%; border: 1px solid rgba(247,244,238,0.05);
+  pointer-events: none;
+}
+.protac-tag {
+  display: inline-block;
+  font-family: var(--font-mono); font-size: 9px;
+  letter-spacing: 0.12em; text-transform: uppercase;
+  background: var(--accent); color: #fff;
+  padding: 3px 10px; border-radius: 20px; margin-bottom: 0.85rem;
+}
+.protac-title {
+  font-family: var(--font-serif);
+  font-size: 1.12rem; font-weight: 600;
+  line-height: 1.38; margin-bottom: 0.75rem;
+  color: #fff; position: relative; z-index: 2;
+}
+.protac-body {
+  font-size: 13px; line-height: 1.78;
+  color: rgba(247,244,238,0.75);
+  position: relative; z-index: 2;
+}
+.protac-stats {
+  display: grid; grid-template-columns: repeat(3,1fr);
+  gap: 9px; margin-top: 1.1rem;
+  position: relative; z-index: 2;
+}
+.ps {
+  background: rgba(247,244,238,0.06);
+  border: 1px solid rgba(247,244,238,0.10);
+  border-radius: 8px; padding: 9px; text-align: center;
+}
+.ps-val {
+  font-family: var(--font-serif);
+  font-size: 1.25rem; font-weight: 700;
+  color: #fff; line-height: 1; margin-bottom: 4px;
+}
+.ps-lbl { font-size: 10px; color: rgba(247,244,238,0.5); line-height: 1.4; }
+
+/* ── DIVIDER ── */
+hr { border: none; border-top: 1px solid var(--border); margin: 2rem 0; }
+
+/* ── FOOTER ── */
+.footer {
+  background: var(--ink); color: rgba(247,244,238,0.45);
+  padding: 2rem 1.5rem; text-align: center;
+}
+.footer-inner { max-width: 800px; margin: 0 auto; }
+.footer-title {
+  font-family: var(--font-serif); font-size: 1rem;
+  color: rgba(247,244,238,0.78); margin-bottom: 0.4rem;
+}
+.footer-meta { font-family: var(--font-mono); font-size: 10px; margin-bottom: 1rem; }
+.footer-pills { display: flex; justify-content: center; flex-wrap: wrap; gap: 7px; }
+.fp {
+  font-family: var(--font-mono); font-size: 10px;
+  padding: 2px 9px; border-radius: 20px;
+  border: 1px solid rgba(247,244,238,0.12);
+  color: rgba(247,244,238,0.38);
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 560px) {
+  .stats-grid { grid-template-columns: repeat(2,1fr); }
+  .stat-cell:nth-child(2) { border-right: none; }
+  .protac-stats { grid-template-columns: 1fr 1fr; }
+  .protac-stats .ps:last-child { grid-column: span 2; }
+  .masthead-inner { padding: 2.2rem 1.1rem 2rem; }
+  .main { padding: 1.8rem 1.1rem; }
+}
+</style>
+</head>
+<body>
+
+<!-- ── MASTHEAD ── -->
+<header class="masthead">
+  <div class="masthead-deco"></div>
+  <div class="masthead-inner">
+    <div class="masthead-rule"></div>
+    <div class="masthead-kicker">바이오·제약 산업 일간 브리핑</div>
+    <h1 class="masthead-title">K-바이오 <span>Daily Report</span></h1>
+    <div class="masthead-meta">
+      <span class="masthead-date">2026.05.02 SAT — VOL.8</span>
+      <div class="source-pills">
+        <span class="pill">더바이오</span>
+        <span class="pill">히트뉴스</span>
+        <span class="pill">데일리팜</span>
+        <span class="pill">팜이데일리</span>
+        <span class="pill">약사공론</span>
+        <span class="pill pill-new">바이오스펙테이터</span>
+        <span class="pill pill-new">바이오타임즈</span>
+        <span class="pill pill-new">BioPharma Dive</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ── STATS BAR ── -->
+<div class="stats-bar">
+  <div class="stats-grid">
+    <div class="stat-cell">
+      <div class="stat-val">세계 최초</div>
+      <div class="stat-lbl">PROTAC FDA 승인</div>
+    </div>
+    <div class="stat-cell">
+      <div class="stat-val">1,500억</div>
+      <div class="stat-lbl">삼바 파업 손실 (최대 6,400억↑)</div>
+    </div>
+    <div class="stat-cell">
+      <div class="stat-val">42호</div>
+      <div class="stat-lbl">국내 신약 — 큐로셀 CAR-T</div>
+    </div>
+    <div class="stat-cell">
+      <div class="stat-val">$70억</div>
+      <div class="stat-lbl">릴리, 켈로니아 M&A</div>
+    </div>
+  </div>
+</div>
+
+<!-- ── MAIN ── -->
+<main class="main">
+
+  <!-- 00 PROTAC -->
+  <div class="sec">
+    <div class="sec-head">
+      <span class="sec-num">00</span>
+      <h2 class="sec-title">★ 인류 첫 PROTAC 신약 FDA 승인 — Arvinas·Pfizer VEPPANU</h2>
+      <span class="badge b-accent">역사적 승인</span>
+    </div>
+    <div class="banner ban-globe">
+      <span>★ GLOBE NEWSWIRE · BIOPHARMA DIVE — 2026.05.01 발표</span>
+    </div>
+    <div class="protac">
+      <div class="protac-tag">WORLD FIRST · PROTAC APPROVAL</div>
+      <div class="protac-title">Arvinas·Pfizer 'VEPPANU (vepdegestrant)'<br>FDA 첫 PROTAC 승인 역사 써</div>
+      <div class="protac-body">아르비나스(Arvinas)와 화이자(Pfizer)가 공동 개발한 PROTAC 단백질 분해제 'VEPPANU'가 2026년 5월 1일 FDA 승인을 획득했다. PDUFA 기한(6월 5일)보다 한 달 앞선 조기 승인이다. ER+/HER2-, ESR1 변이 진행성·전이성 유방암 환자 중 최소 1회 내분비 치료 후 진행된 성인에게 승인됐다. 2013년 아르비나스가 개척한 표적 단백질 분해(TPD) 플랫폼이 최초로 임상 결과로 이어진 역사적 이정표다.</div>
+      <div class="protac-stats">
+        <div class="ps">
+          <div class="ps-val">43%</div>
+          <div class="ps-lbl">진행·사망 위험 감소<br>(vs 풀베스트란트)</div>
+        </div>
+        <div class="ps">
+          <div class="ps-val">5.0개월</div>
+          <div class="ps-lbl">중앙 PFS<br>(대조군 2.1개월)</div>
+        </div>
+        <div class="ps">
+          <div class="ps-val">$50M</div>
+          <div class="ps-lbl">마일스톤 수령<br>(승인 트리거)</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-head">
+        <div class="card-title">PROTAC 기술 파급 — 파킨슨·근위축증·고형암까지 확장 전망</div>
+        <span class="badge b-purple">플랫폼</span>
+      </div>
+      <div class="card-body">아르비나스는 LRRK2 분해제(ARV-102, 파킨슨병), ARV-393(척수구근성근위축증), 다양한 고형암 타깃 PROTAC 파이프라인의 임상 가속화를 예고했다. CEO 랜디 틸은 "PROTAC이 의미 있는 임상 결과로 이어질 수 있음을 입증한 변혁적인 순간"이라 밝혔다. 화이자는 상업화를 위한 제3의 파트너 선정을 진행 중이다.</div>
+      <div class="card-foot">출처: BioPharma Dive · GlobeNewswire (2026.05.01)</div>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- 01 삼성바이오 -->
+  <div class="sec">
+    <div class="sec-head">
+      <span class="sec-num">01</span>
+      <h2 class="sec-title">삼성바이오로직스 창사 첫 전면 파업</h2>
+      <span class="badge b-danger">긴급</span>
+    </div>
+    <div class="hl">
+      <div class="hl-title">파업 손실 이미 1,500억 발생…5일까지 지속, 4일 노동청 중재 예정</div>
+      <div class="hl-body">삼성바이오로직스 노조가 5월 1~5일 창사 이래 첫 전면 파업에 돌입했다. 조합원 3,998명 중 약 63%인 2,500여 명이 참여했으며, 4월 28일 선제 파업 여파로 이미 1,500억원 규모 손실이 발생했다. 전면 파업 지속 시 최대 6,400억원 손실이 예상되며, 글로벌 고객사 납품 지연 우려도 제기됐다.</div>
+    </div>
+    <div class="card">
+      <div class="card-head">
+        <div class="card-title">노사 쟁점: 임금 14% 인상 vs 사측 6.2% 안 — 13차례 교섭 끝 결렬</div>
+        <span class="badge b-danger">노사갈등</span>
+      </div>
+      <div class="card-body">노조는 평균 14% 임금 인상, 1인당 3,000만원 격려금, 영업이익 20% 성과급 배분을 요구했다. 법원은 배양·정제 등 핵심 공정은 파업 허용, 농축·원액 충전 등 3개 항목은 파업 금지 결정을 내렸다. 4일 중부지방고용노동청 중재 협상이 예정돼 있다.</div>
+      <div class="card-foot">출처: 뉴스핌 · 아시아경제 · 서울경제</div>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- 02 큐로셀 -->
+  <div class="sec">
+    <div class="sec-head">
+      <span class="sec-num">02</span>
+      <h2 class="sec-title">큐로셀, 국내 첫 CAR-T 치료제 '림카토' 품목허가</h2>
+      <span class="badge b-success">신약 허가</span>
+    </div>
+    <div class="banner ban-bios">
+      <div class="banner-dot"></div>
+      바이오스펙테이터 주요 보도 — "첫 국산 CAR-T 나온다..큐로셀 '림카토' 시판승인"
+    </div>
+    <div class="banner ban-times">
+      <div class="banner-dot"></div>
+      바이오타임즈 리드 보도 — "큐로셀 '림카토', 국산 42호 신약 등극…국내 첫 CAR-T 시대 열었다"
+    </div>
+    <div class="hl green">
+      <div class="hl-title">국내 개발 제42호 신약, K-바이오 세포치료제 첫 상용화 성공</div>
+      <div class="hl-body">큐로셀의 '림카토(안발캅타젠오토류셀)'가 식약처 첨단재생바이오법상 정식 품목허가를 획득했다. 재발·불응성 거대 B세포 림프종(DLBCL) 및 원발성 종격동 거대 B세포 림프종(PMBCL) 성인 환자 대상. OVIS™ 기술 기반 임상 2상에서 객관적 반응률(ORR) 75.3%, 완전관해율(CR) 67.1%를 기록했다.</div>
+    </div>
+    <div class="card">
+      <div class="card-head">
+        <div class="card-title">고형암·자가면역질환으로 CAR-T 플랫폼 확장 계획 공식화</div>
+        <span class="badge b-success">국내 최초</span>
+      </div>
+      <div class="card-body">큐로셀은 림카토를 기반으로 적응증 확대와 글로벌 진출을 추진한다. CAR-T 기술의 불모지였던 국내에서 연구를 시작해 상용화까지 이른 첫 성공 사례다.</div>
+      <div class="card-foot">출처: 약사공론 · 히트뉴스 · 바이오스펙테이터 · 바이오타임즈</div>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- 03 셀트리온 -->
+  <div class="sec">
+    <div class="sec-head">
+      <span class="sec-num">03</span>
+      <h2 class="sec-title">셀트리온, ADC 항암신약 3종 모두 환자 투약 돌입</h2>
+      <span class="badge b-info">임상 진입</span>
+    </div>
+    <div class="card">
+      <div class="card-head">
+        <div class="card-title">CT-P70·CT-P71·CT-P73 전 후보물질 임상 투약 개시 — "매출 5.3조" 선언</div>
+        <span class="badge b-info">ADC 신약</span>
+      </div>
+      <div class="card-body">셀트리온이 ADC 기반 항암신약 후보물질 3종을 모두 환자 투약 단계에 올렸다. CT-P70은 EGFR 돌연변이 비소세포폐암, CT-P73은 자궁경부암·두경부암·대장암 등 고형암을 타깃한다. 바이오시밀러를 넘어 신약개발사로의 전환을 가속화하며 연간 매출 5.3조원 목표를 공식 선언했다.</div>
+      <div class="card-foot">출처: 더바이오 · 팜이데일리</div>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- 바이오타임즈 섹션 -->
+  <div class="sec">
+    <div class="sec-head">
+      <span class="sec-num">03-B</span>
+      <h2 class="sec-title">바이오타임즈 — 과학·산업 트렌드 픽</h2>
+      <span class="badge b-teal">바이오타임즈</span>
+    </div>
+    <div class="banner ban-times">
+      <div class="banner-dot"></div>
+      바이오타임즈 심층 기획 3선
+    </div>
+    <div class="card">
+      <div class="card-head">
+        <div class="card-title">제네릭 기업들, 바이오시밀러 '황금의 10년' 선점 경쟁 본격화</div>
+        <span class="badge b-info">산업 트렌드</span>
+      </div>
+      <div class="card-body">주요 블록버스터 바이오의약품 특허 만료가 2026~2035년에 집중되면서 글로벌 제네릭 기업들이 바이오시밀러 시장 선점에 나서고 있다. 테바·마일란 등 전통 제네릭사뿐 아니라 암젠·화이자 등 빅파마도 시밀러 라인업을 확대하고 있으며, 삼성바이오에피스·셀트리온 등 K-바이오에게도 전략적 기회로 분석됐다.</div>
+      <div class="card-foot">출처: 바이오타임즈 (2026.04.30)</div>
+    </div>
+    <div class="card">
+      <div class="card-head">
+        <div class="card-title">KAIST·데이비드 베이커 공동연구 — AI로 원하는 단백질 '직접 설계' 성공</div>
+        <span class="badge b-purple">기초과학</span>
+      </div>
+      <div class="card-body">KAIST 이규리 교수팀과 2024년 노벨화학상 수상자 데이비드 베이커 교수가 AI를 활용해 코티솔 인식 단백질을 처음부터 설계하고 실제 바이오센서로 구현하는 데 성공했다. 연구 결과는 Nature Communications에 게재됐으며, AI 기반 바이오 설계가 '예측'을 넘어 '창조' 단계로 진입했다는 평가가 나온다.</div>
+      <div class="card-foot">출처: 바이오타임즈 / Nature Communications (2026.03.28)</div>
+    </div>
+    <div class="card">
+      <div class="card-head">
+        <div class="card-title">췌장 알파·베타 세포 후성유전체 조절, 제2형 당뇨병 발병에 핵심 역할 규명</div>
+        <span class="badge b-amber">기초연구</span>
+      </div>
+      <div class="card-body">스웨덴 룬드대 연구진이 췌장 세포의 전장 유전체 비설파이트 시퀀싱으로 2만 2,000여 개의 메틸화 차이를 규명해 제2형 당뇨병 발병 기전을 새롭게 조명했다. 후성유전체 조절이 인슐린 분비 세포 기능 유지에 결정적임을 보여준 연구다.</div>
+      <div class="card-foot">출처: 바이오타임즈 (2026.04.30)</div>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- 04 릴리 M&A -->
+  <div class="sec">
+    <div class="sec-head">
+      <span class="sec-num">04</span>
+      <h2 class="sec-title">릴리, 켈로니아 $70억 인수 — in vivo CAR-T 두 달 연속 베팅</h2>
+      <span class="badge b-purple">글로벌 M&amp;A</span>
+    </div>
+    <div class="banner ban-bios">
+      <div class="banner-dot"></div>
+      바이오스펙테이터 단독 보도 — "릴리, 켈로니아 70억弗 인수..in vivo CAR-T 또 베팅"
+    </div>
+    <div class="hl purple">
+      <div class="hl-title">두 달 만에 두 번째 in vivo CAR-T 초대형 딜</div>
+      <div class="hl-body">일라이 릴리가 켈로니아 테라퓨틱스를 계약금 32억5천만달러 포함 총 70억달러에 인수한다. 두 달 연속 체내(in vivo) CAR-T 기업을 인수하며 차세대 면역항암제 파이프라인 선점 전략을 이어갔다.</div>
+    </div>
+    <div class="card">
+      <div class="card-head">
+        <div class="card-title">AZ, 파인트리 'EGFR 분해 이중항체' 2,500만달러 옵션 행사</div>
+        <span class="badge b-purple">기술 거래</span>
+      </div>
+      <div class="card-body">아스트라제네카(AZ)가 파인트리의 EGFR 분해(degrader) 이중항체에 대해 2,500만달러 옵션을 행사했다. '타그리소' 내성 극복을 위한 차세대 EGFR 전략의 일환이다.</div>
+      <div class="card-foot">출처: 바이오스펙테이터</div>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- 05 자눅스 / 위고비 / ASCO -->
+  <div class="sec">
+    <div class="sec-head">
+      <span class="sec-num">05</span>
+      <h2 class="sec-title">자눅스 JANX008 개발 중단 / 위고비 오남용 논란 / ASCO 2026 출격</h2>
+      <span class="badge b-amber">임상·정책·학회</span>
+    </div>
+    <div class="card">
+      <div class="card-head">
+        <div class="card-title">자눅스, 마스킹 EGFR T세포 인게이저 효능 이슈로 중단</div>
+        <span class="badge b-danger">개발 중단</span>
+      </div>
+      <div class="card-body">자눅스 테라퓨틱스가 EGFR·CD3 이중 마스킹 TCE 'JANX008'을 효능 문제로 중단했다. 정상 조직 독성 최소화를 위한 마스킹 설계가 활성화 효능까지 억제하는 한계로 귀결된 사례다.</div>
+      <div class="card-foot">출처: 바이오스펙테이터 (오늘 최다 조회 1위)</div>
+    </div>
+    <div class="card">
+      <div class="card-head">
+        <div class="card-title">위고비·마운자로 '오남용우려약' 지정 논란 + ASCO 2026 K-바이오 출격</div>
+        <span class="badge b-teal">정책·학회</span>
+      </div>
+      <div class="card-body">비만 치료제 위고비·마운자로에 대한 오남용우려약 지정 논의에 업계가 반발했다. 에스티큐브(넬마스토바트 전이성 대장암 임상 1b·2상), 신라젠(BAL0891) 등이 5월 29일~6월 2일 시카고 ASCO 2026에서 K-바이오 항암신약 성과를 발표할 예정이다.</div>
+      <div class="card-foot">출처: 더바이오 · 히트뉴스 · 데일리팜</div>
+    </div>
+  </div>
+
+</main>
+
+<!-- ── FOOTER ── -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-title">K-바이오 Daily Report</div>
+    <div class="footer-meta">2026.05.02 · 총 8개 이슈 · AI 보조 편집</div>
+    <div class="footer-pills">
+      <span class="fp">더바이오</span>
+      <span class="fp">히트뉴스</span>
+      <span class="fp">데일리팜</span>
+      <span class="fp">팜이데일리</span>
+      <span class="fp">약사공론</span>
+      <span class="fp">바이오스펙테이터</span>
+      <span class="fp">바이오타임즈</span>
+      <span class="fp">BioPharma Dive</span>
+      <span class="fp">GlobeNewswire</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
