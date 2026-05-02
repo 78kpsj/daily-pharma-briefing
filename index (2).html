@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="K-바이오 Daily Report 2026.05.03 — 바이오·제약 산업 일간 브리핑">
+<title>K-바이오 Daily Report — 2026.05.03</title>
+<style>
+:root {
+  --font-sans:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic","맑은 고딕",sans-serif;
+  --font-serif:Georgia,"Apple Myungjo","HY신명조",serif;
+  --font-mono:"SF Mono","Fira Code",Consolas,monospace;
+  --bg:#F7F4EE;--bg-card:#FDFCF9;
+  --ink:#1A1714;--ink-2:#4A4540;--ink-3:#8A8480;
+  --accent:#C8401A;
+  --blue:#1B4F8A;--blue-soft:#E8EFF8;
+  --green:#1A6B3A;--green-soft:#E6F3EC;
+  --purple:#4B2F8A;--purple-soft:#EEEAF8;
+  --amber:#8A5A0A;--amber-soft:#FBF3E3;
+  --teal:#0E6B5A;--teal-soft:#E3F4F1;
+  --coral:#8A3020;--coral-soft:#FAEEEB;
+  --border:rgba(26,23,20,.10);--border-md:rgba(26,23,20,.18);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--font-sans);font-size:15px;line-height:1.75;-webkit-font-smoothing:antialiased;word-break:keep-all}
+.masthead{background:var(--ink);color:var(--bg);position:relative;overflow:hidden}
+.deco{position:absolute;right:-60px;top:-40px;width:380px;height:380px;border-radius:50%;border:1px solid rgba(247,244,238,.04);pointer-events:none}
+.deco::after{content:'';position:absolute;inset:40px;border-radius:50%;border:1px solid rgba(247,244,238,.04)}
+.mh-inner{max-width:800px;margin:0 auto;padding:3rem 1.5rem 2.5rem;position:relative;z-index:2}
+.mh-rule{width:40px;height:3px;background:var(--accent);margin-bottom:1.4rem}
+.mh-kicker{font-family:var(--font-mono);font-size:10px;letter-spacing:.18em;color:rgba(247,244,238,.45);text-transform:uppercase;margin-bottom:.5rem}
+.mh-title{font-family:var(--font-serif);font-size:clamp(1.9rem,5vw,3.1rem);font-weight:700;line-height:1.1;letter-spacing:-.02em;margin-bottom:.75rem}
+.mh-title span{color:var(--accent)}
+.mh-meta{display:flex;align-items:center;gap:1.2rem;flex-wrap:wrap;margin-top:1.1rem}
+.mh-date{font-family:var(--font-mono);font-size:11px;color:rgba(247,244,238,.55)}
+.pills{display:flex;gap:5px;flex-wrap:wrap}
+.pill{font-family:var(--font-mono);font-size:10px;padding:2px 8px;border-radius:20px;border:1px solid rgba(247,244,238,.15);color:rgba(247,244,238,.5)}
+.pill-hl{border-color:rgba(200,64,26,.5);color:#F0A090;background:rgba(200,64,26,.1)}
+.stats-bar{background:var(--accent)}
+.stats-grid{max-width:800px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr)}
+.stat-cell{padding:1rem 1.3rem;border-right:1px solid rgba(255,255,255,.18);color:#fff}
+.stat-cell:last-child{border-right:none}
+.stat-val{font-family:var(--font-serif);font-size:1.2rem;font-weight:700;line-height:1;margin-bottom:3px}
+.stat-lbl{font-family:var(--font-mono);font-size:9px;opacity:.72;letter-spacing:.04em}
+.main{max-width:800px;margin:0 auto;padding:2.5rem 1.5rem}
+.sec{margin-bottom:2.5rem;opacity:0;transform:translateY(18px);animation:up .45s ease forwards}
+.sec:nth-child(1){animation-delay:.04s}.sec:nth-child(2){animation-delay:.10s}
+.sec:nth-child(3){animation-delay:.16s}.sec:nth-child(4){animation-delay:.22s}
+.sec:nth-child(5){animation-delay:.28s}.sec:nth-child(6){animation-delay:.34s}
+@keyframes up{to{opacity:1;transform:none}}
+.sec-head{display:flex;align-items:baseline;gap:10px;margin-bottom:.9rem;padding-bottom:.65rem;border-bottom:1px solid var(--border);flex-wrap:wrap}
+.sec-num{font-family:var(--font-mono);font-size:10px;color:var(--ink-3);min-width:22px}
+.sec-title{font-family:var(--font-serif);font-size:1.08rem;font-weight:600;flex:1;line-height:1.35}
+.badge{display:inline-flex;align-items:center;font-family:var(--font-mono);font-size:9px;font-weight:500;padding:2px 8px;border-radius:20px;white-space:nowrap;letter-spacing:.04em}
+.b-danger{background:var(--coral-soft);color:var(--coral)}
+.b-success{background:var(--green-soft);color:var(--green)}
+.b-info{background:var(--blue-soft);color:var(--blue)}
+.b-purple{background:var(--purple-soft);color:var(--purple)}
+.b-amber{background:var(--amber-soft);color:var(--amber)}
+.b-teal{background:var(--teal-soft);color:var(--teal)}
+.b-accent{background:var(--accent);color:#fff}
+.card{background:var(--bg-card);border:1px solid var(--border);border-radius:10px;padding:1.1rem 1.3rem;margin-bottom:.7rem;transition:box-shadow .2s,border-color .2s}
+.card:hover{box-shadow:0 5px 22px rgba(26,23,20,.10);border-color:var(--border-md)}
+.card:last-child{margin-bottom:0}
+.card-head{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;margin-bottom:.55rem}
+.card-title{font-weight:500;font-size:14px;line-height:1.4;flex:1}
+.card-body{font-size:13px;color:var(--ink-2);line-height:1.72}
+.card-foot{margin-top:.55rem;font-family:var(--font-mono);font-size:10px;color:var(--ink-3)}
+.hl{background:var(--bg-card);border-left:3px solid var(--accent);border-radius:0 8px 8px 0;padding:.9rem 1.1rem;margin-bottom:.7rem}
+.hl.green{border-left-color:var(--green)}.hl.purple{border-left-color:var(--purple)}
+.hl.teal{border-left-color:var(--teal)}.hl.blue{border-left-color:var(--blue)}
+.hl-title{font-weight:500;font-size:13px;margin-bottom:4px}
+.hl-body{font-size:12.5px;color:var(--ink-2);line-height:1.72}
+.banner{display:flex;align-items:center;gap:7px;border-radius:7px;padding:6px 11px;margin-bottom:.7rem;font-family:var(--font-mono);font-size:10px;letter-spacing:.02em}
+.bdot{width:5px;height:5px;border-radius:50%;flex-shrink:0}
+.ban-bios{background:var(--purple-soft);border:1px solid rgba(75,47,138,.14);color:var(--purple)}
+.ban-bios .bdot{background:var(--purple)}
+.ban-times{background:var(--teal-soft);border:1px solid rgba(14,107,90,.14);color:var(--teal)}
+.ban-times .bdot{background:var(--teal)}
+.ban-globe{background:var(--amber-soft);border:1px solid rgba(138,90,10,.14);color:var(--amber)}
+.dark-card{background:var(--ink);color:var(--bg);border-radius:12px;padding:1.7rem;margin-bottom:.7rem;position:relative;overflow:hidden}
+.dark-card::before{content:'';position:absolute;right:-55px;bottom:-55px;width:210px;height:210px;border-radius:50%;border:1px solid rgba(247,244,238,.05);pointer-events:none}
+.dk-tag{display:inline-block;font-family:var(--font-mono);font-size:9px;letter-spacing:.12em;text-transform:uppercase;background:var(--accent);color:#fff;padding:3px 10px;border-radius:20px;margin-bottom:.85rem}
+.dk-title{font-family:var(--font-serif);font-size:1.1rem;font-weight:600;line-height:1.38;margin-bottom:.75rem;color:#fff;position:relative;z-index:2}
+.dk-body{font-size:13px;line-height:1.78;color:rgba(247,244,238,.75);position:relative;z-index:2}
+.dk-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-top:1.1rem;position:relative;z-index:2}
+.dks{background:rgba(247,244,238,.06);border:1px solid rgba(247,244,238,.10);border-radius:8px;padding:9px;text-align:center}
+.dks-val{font-family:var(--font-serif);font-size:1.2rem;font-weight:700;color:#fff;line-height:1;margin-bottom:4px}
+.dks-lbl{font-size:10px;color:rgba(247,244,238,.5);line-height:1.4}
+hr{border:none;border-top:1px solid var(--border);margin:2rem 0}
+.footer{background:var(--ink);color:rgba(247,244,238,.45);padding:2rem 1.5rem;text-align:center}
+.footer-inner{max-width:800px;margin:0 auto}
+.footer-title{font-family:var(--font-serif);font-size:1rem;color:rgba(247,244,238,.78);margin-bottom:.4rem}
+.footer-meta{font-family:var(--font-mono);font-size:10px;margin-bottom:1rem}
+.footer-pills{display:flex;justify-content:center;flex-wrap:wrap;gap:7px}
+.fp{font-family:var(--font-mono);font-size:10px;padding:2px 9px;border-radius:20px;border:1px solid rgba(247,244,238,.12);color:rgba(247,244,238,.38)}
+@media(max-width:560px){
+  .stats-grid{grid-template-columns:repeat(2,1fr)}
+  .stat-cell:nth-child(2){border-right:none}
+  .dk-stats{grid-template-columns:1fr 1fr}
+  .dk-stats .dks:last-child{grid-column:span 2}
+  .mh-inner{padding:2.2rem 1.1rem 2rem}
+  .main{padding:1.8rem 1.1rem}
+}
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="deco"></div>
+  <div class="mh-inner">
+    <div class="mh-rule"></div>
+    <div class="mh-kicker">바이오·제약 산업 일간 브리핑</div>
+    <h1 class="mh-title">K-바이오 <span>Daily Report</span></h1>
+    <div class="mh-meta">
+      <span class="mh-date">2026.05.03 SUN — VOL.9</span>
+      <div class="pills">
+        <span class="pill">더바이오</span><span class="pill">히트뉴스</span>
+        <span class="pill">데일리팜</span><span class="pill">팜이데일리</span>
+        <span class="pill">약사공론</span>
+        <span class="pill pill-hl">바이오스펙테이터</span>
+        <span class="pill pill-hl">바이오타임즈</span>
+        <span class="pill pill-hl">BioPharma Dive</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="stats-bar">
+  <div class="stats-grid">
+    <div class="stat-cell">
+      <div class="stat-val">파업 3일째</div>
+      <div class="stat-lbl">삼바 — 4일 노동청 중재</div>
+    </div>
+    <div class="stat-cell">
+      <div class="stat-val">6,400억</div>
+      <div class="stat-lbl">삼바 파업 최대 손실 추산</div>
+    </div>
+    <div class="stat-cell">
+      <div class="stat-val">$850M</div>
+      <div class="stat-lbl">바이오젠, 펠자르타맙 중국 권리</div>
+    </div>
+    <div class="stat-cell">
+      <div class="stat-val">D-26</div>
+      <div class="stat-lbl">ASCO 2026 K-바이오 출격</div>
+    </div>
+  </div>
+</div>
+
+<main class="main">
+
+  <!-- 01 삼바 파업 3일째 -->
+  <div class="sec">
+    <div class="sec-head">
+      <span class="sec-num">01</span>
+      <h2 class="sec-title">삼성바이오로직스 파업 3일째 — 4일 노동청 중재가 분수령</h2>
+      <span class="badge b-danger">긴급 업데이트</span>
+    </div>
+    <div class="hl">
+      <div class="hl-title">항암제·HIV 치료제 생산 배치 중단…최대 6,400억 손실 현실화</div>
+      <div class="hl-body">삼성바이오로직스 창사 첫 전면 파업이 3일째 지속되고 있다. 파업 첫날 조합원 4,000명 중 2,800명이 참여했으며, 연속 공정 특성상 공정이 멈추면 단백질 변질로 전량 폐기가 불가피해 항암제·HIV 치료제 등 일부 생산 배치가 중단됐다. 부분 파업(4.28~30) 손실 1,500억원에 전면 파업 지속 시 최대 6,400억원 추가 손실이 예상된다. 4일 중부지방고용노동청 중재 협상이 예정돼 있으나 타결 가능성은 불투명하다.</div>
+    </div>
+    <div class="card">
+      <div class="card-head">
+        <div class="card-title">법원 "3개 공정 파업 금지" — 바이오의약품 특수성 반영한 절충 판단</div>
+        <span class="badge b-danger">법원 결정</span>
+      </div>
+      <div class="card-body">인천지법은 농축·버퍼 교환, 원액 충전, 버퍼 제조·공급 등 3개 공정을 '보존 행위'로 규정해 파업 중에도 유지 의무를 부과했다. 회사 측은 나머지 6개 공정에 대해서도 파업 금지를 요청했으나 기각돼 항소 중이다. 노사는 지난해 12월부터 13차례 교섭했으나 임금 14% vs 6.2% 격차를 좁히지 못했다.</div>
+      <div class="card-foot">출처: EBN뉴스 · 중앙이코노미뉴스 · 뉴스핌 (2026.05.02~03)</div>
+    </div>
+    <div class="card">
+      <div class="card-head">
+        <div class="card-title">글로벌 CDMO 공급망 신뢰 타격 — 론자 등 경쟁사 반사이익 가능성</div>
+        <span class="badge b-amber">공급망 리스크</span>
+      </div>
+      <div class="card-body">업계는 단기 재무 손실보다 글로벌 제약사들의 공급망 신뢰 하락을 더 심각하게 본다. FDA 등 규제기관이 의약품 생산 '공정 무결성'을 최우선으로 요구하는 만큼 납기 지연은 스위스 론자 등 해외 CDMO 경쟁사로 물량이 이전되는 트리거가 될 수 있다는 분석이 나온다.</div>
+      <div class="card-foot">출처: 뉴스핌 · 서울경제 (2026.05.01~03)</div>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- 02 바이오젠 펠자르타맙 -->
+  <div class="sec">
+    <div class="sec-head">
+      <span class="sec-num">02</span>
+      <h2 class="sec-title">바이오젠, 펠자르타맙 중국 권리 $850M 인수 — 글로벌 독점권 완성</h2>
+      <span class="badge b-purple">글로벌 M&amp;A</span>
+    </div>
+    <div class="banner ban-globe">
+      <span>★ GlobeNewswire · BioPharma Dive (2026.04.20) — 더바이오 보도</span>
+    </div>
+    <div class="dark-card">
+      <div class="dk-tag">GLOBAL DEAL · $850M</div>
+      <div class="dk-title">바이오젠, TJ바이오파마로부터 CD38 항체 '펠자르타맙' 중화권 권리 인수<br>전 세계 독점 개발·상업화 권리 통합 완성</div>
+      <div class="dk-body">바이오젠(Biogen)이 TJ바이오파마의 펠자르타맙(felzartamab) 중화권 권리를 인수해 전 세계 단독 개발·상업화 권리를 확보했다. 계약금 1억달러에 마일스톤 최대 7억5천만달러, 총 잠재 가치 8억5천만달러 규모다. 펠자르타맙은 IgA신장병(IgAN), 항체매개거부반응(AMR), 막성신증(PMN) 등 면역매개 신장질환 3개 적응증 글로벌 3상 진행 중이며, 다발성 골수종은 중국 NMPA BLA 심사 중이다.</div>
+      <div class="dk-stats">
+        <div class="dks"><div class="dks-val">$100M</div><div class="dks-lbl">계약금</div></div>
+        <div class="dks"><div class="dks-val">$750M</div><div class="dks-lbl">최대 마일스톤</div></div>
+        <div class="dks"><div class="dks-val">3상 ×3</div><div class="dks-lbl">희귀 신장질환 글로벌 3상</div></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-head">
+        <div class="card-title">다르잘렉스(J&J) 대항마 — 1.5시간 주입 vs 7시간, 2029년 中 시장 14.6% 목표</div>
+        <span class="badge b-purple">경쟁 분석</span>
+      </div>
+      <div class="card-body">중국 다발성 골수종 시장에서 다르잘렉스가 87.5% 점유 중이나 최대 7시간 정맥주입이 부담이다. 펠자르타맙은 1.5시간 주입으로 차별화되며, 중국 내 첫 국산 CD38 면역치료제로 포지셔닝 중이다. GlobalData 전망 기준 2029년 중국 MM 시장 14.6% 점유가 기대된다.</div>
+      <div class="card-foot">출처: GlobeNewswire · Pharmaceutical Technology · 더바이오</div>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- 03 ASCO 2026 -->
+  <div class="sec">
+    <div class="sec-head">
+      <span class="sec-num">03</span>
+      <h2 class="sec-title">ASCO 2026 D-26 — K-바이오 임상 데이터로 기술이전 조준</h2>
+      <span class="badge b-info">학회 프리뷰</span>
+    </div>
+    <div class="hl green">
+      <div class="hl-title">5월 29일 시카고 개막 — 환자 투여 데이터 = 기술이전 직결</div>
+      <div class="hl-body">ASCO 2026이 5월 29일~6월 2일 미국 시카고에서 열린다. AACR과 달리 ASCO는 실제 환자 투여 임상 데이터 중심이라 기술이전 계약으로 직결될 가능성이 높다. 에스티큐브·신라젠·바이젠셀·지아이이노베이션 등 국내 기업들이 대거 참가한다.</div>
+    </div>
+    <div class="card">
+      <div class="card-head">
+        <div class="card-title">에스티큐브 '넬마스토바트' 대장암 임상 1b·2상 + 화이자 항암제 장기 추적 데이터</div>
+        <span class="badge b-info">임상 발표</span>
+      </div>
+      <div class="card-body">에스티큐브는 BTN1A1 타깃 면역항암제 '넬마스토바트'의 전이성 대장암 임상 1b·2상(STCUBE-003) mIHC 결과를 발표한다. 신라젠은 BAL0891 임상 초록, 바이젠셀은 EBV 특이적 세포치료제 VT-EBV-N 임상 2상 데이터를 공개한다. 화이자도 차세대 파이프라인 임상 결과를 대거 발표할 예정이다.</div>
+      <div class="card-foot">출처: 더바이오 · 서울경제</div>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- 04 K-바이오 직접 상업화 전환 -->
+  <div class="sec">
+    <div class="sec-head">
+      <span class="sec-num">04</span>
+      <h2 class="sec-title">K-바이오, '기술이전'을 넘어 '직접 상업화'로 — 임상 성적표가 가른다</h2>
+      <span class="badge b-teal">산업 트렌드</span>
+    </div>
+    <div class="banner ban-times">
+      <div class="bdot"></div>
+      바이오타임즈 기획 심층 보도
+    </div>
+    <div class="hl teal">
+      <div class="hl-title">글로벌 기준, '기대감'에서 '데이터·실행력'으로 급이동</div>
+      <div class="hl-body">글로벌 빅파마가 기술적 가능성이나 초기 신호가 아닌 실제 환자 데이터로 검증된 후보물질에만 투자와 협력을 집중하고 있다. 2026년은 리가켐바이오·에이프릴바이오·디앤디파마텍 등의 핵심 파이프라인 임상 2상 결과가 잇달아 공개되는 분기점이다.</div>
+    </div>
+    <div class="card">
+      <div class="card-head">
+        <div class="card-title">한미약품 MSD 기술이전 비만·MASH 파이프라인 — 2b상 결과 2026 상반기 발표</div>
+        <span class="badge b-teal">핵심 이벤트</span>
+      </div>
+      <div class="card-body">한미약품이 MSD에 기술이전한 비만 합병증·MASH 치료제의 임상 2b상 결과 발표가 2026년 상반기 최대 이벤트다. 유한양행은 J&J 파트너사의 리브리반트 SC 제형 미국 허가로 렉라자(라즈클루즈)의 글로벌 매출 확대에 청신호가 켜졌다. SK바이오팜·GC녹십자도 미국 시장 안착 매출이 본격화된다.</div>
+      <div class="card-foot">출처: 바이오타임즈 · 약사공론 · 더바이오</div>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- 05 바이오젠 SPINRAZA + Apellis -->
+  <div class="sec">
+    <div class="sec-head">
+      <span class="sec-num">05</span>
+      <h2 class="sec-title">바이오젠, SPINRAZA 고용량 FDA 승인 + Apellis 인수로 희귀질환 포트폴리오 급강화</h2>
+      <span class="badge b-success">FDA 승인 / M&amp;A</span>
+    </div>
+    <div class="banner ban-globe">
+      <span>★ GlobeNewswire (2026.03.30~31)</span>
+    </div>
+    <div class="card">
+      <div class="card-head">
+        <div class="card-title">SPINRAZA 고용량 제형 추가 승인 — SMA 환자 치료 옵션 확대</div>
+        <span class="badge b-success">FDA 승인</span>
+      </div>
+      <div class="card-body">바이오젠이 척수성 근위축증(SMA) 치료제 SPINRAZA의 고용량 제형을 추가 FDA 승인받았다. DEVOTE 피벗 연구 기반으로 기존 치료 경험자와 신규 환자 모두에게 적용 가능하며, 치료 선택지가 확대됐다.</div>
+      <div class="card-foot">출처: GlobeNewswire (2026.03.30)</div>
+    </div>
+    <div class="card">
+      <div class="card-head">
+        <div class="card-title">Apellis 인수 — EMPAVELI·SYFOVRE 확보, 신제품 매출 Q1 전년 대비 12% 성장</div>
+        <span class="badge b-purple">M&amp;A · 실적</span>
+      </div>
+      <div class="card-body">바이오젠은 Apellis 인수로 FDA 승인 희귀 신장질환 치료제 EMPAVELI(3개 적응증)와 SYFOVRE를 확보했다. 펠자르타맙 중국 권리 인수와 맞물려 면역학·희귀질환 분야가 급성장 중이며, 2026년 Q1 신제품 매출은 전년 대비 12% 증가했다.</div>
+      <div class="card-foot">출처: Biogen Q1 2026 실적 · GlobeNewswire (2026.03.31)</div>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- 06 바이오스펙테이터 + 생물보안법 -->
+  <div class="sec">
+    <div class="sec-head">
+      <span class="sec-num">06</span>
+      <h2 class="sec-title">길리어드·아커스 TIGIT 포기 + 美 생물보안법 K-CDMO 반사이익 현실화</h2>
+      <span class="badge b-info">글로벌 트렌드</span>
+    </div>
+    <div class="banner ban-bios">
+      <div class="bdot"></div>
+      바이오스펙테이터 심층 보도
+    </div>
+    <div class="card">
+      <div class="card-head">
+        <div class="card-title">길리어드·아커스, TIGIT 면역항암제 공동 개발 중단 — 플랫폼 한계 재확인</div>
+        <span class="badge b-danger">개발 중단</span>
+      </div>
+      <div class="card-body">길리어드사이언스와 아커스바이오사이언시스가 TIGIT 표적 면역항암제 공동 개발을 중단했다. 다수의 빅파마가 TIGIT 경쟁에서 이탈하는 흐름이 이어지고 있으며, TIGIT 단독 타깃 차별화 전략의 한계가 재확인됐다. 아커스는 남은 파이프라인에 역량을 집중한다는 방침이다.</div>
+      <div class="card-foot">출처: 더바이오 · 바이오스펙테이터</div>
+    </div>
+    <div class="card">
+      <div class="card-head">
+        <div class="card-title">美 생물보안법 발효 — 삼성바이오로직스 GSK 공장 인수, 셀트리온 릴리 공장 인수</div>
+        <span class="badge b-info">정책 수혜</span>
+      </div>
+      <div class="card-body">미국 생물보안법이 공식 발효되며 K-CDMO 반사이익이 현실화됐다. 삼성바이오로직스는 GSK 미국 바이오의약품 생산시설을 인수했고, 셀트리온은 일라이 릴리 뉴저지 공장을 약 4,600억원에 인수해 미국 내 생산 기반을 확보했다. 삼성바이오로직스는 이미 글로벌 상위 20개 제약사 중 17곳을 고객사로 두고 있다.</div>
+      <div class="card-foot">출처: 더바이오 · 서울경제</div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-title">K-바이오 Daily Report</div>
+    <div class="footer-meta">2026.05.03 · 총 6개 이슈 · AI 보조 편집</div>
+    <div class="footer-pills">
+      <span class="fp">더바이오</span><span class="fp">히트뉴스</span>
+      <span class="fp">데일리팜</span><span class="fp">팜이데일리</span>
+      <span class="fp">약사공론</span><span class="fp">바이오스펙테이터</span>
+      <span class="fp">바이오타임즈</span><span class="fp">BioPharma Dive</span>
+      <span class="fp">GlobeNewswire</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
