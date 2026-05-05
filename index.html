@@ -161,8 +161,12 @@ hr{border:none;border-top:1px solid var(--border);margin:2rem 0}
   </div>
   <!-- DATE TABS -->
   <div class="tab-bar">
-    <button class="tab-btn active" onclick="switchTab('may05', this)">
-      <span class="tab-date">5월 5일 (화)<span class="tab-new">NEW</span></span>
+    <button class="tab-btn active" onclick="switchTab('may06', this)">
+      <span class="tab-date">5월 6일 (수)<span class="tab-new">NEW</span></span>
+      <span class="tab-sub">VOL.12 · 5개 이슈</span>
+    </button>
+    <button class="tab-btn" onclick="switchTab('may05', this)">
+      <span class="tab-date">5월 5일 (화)</span>
       <span class="tab-sub">VOL.11 · 5개 이슈</span>
     </button>
     <button class="tab-btn" onclick="switchTab('may04', this)">
@@ -181,9 +185,160 @@ hr{border:none;border-top:1px solid var(--border);margin:2rem 0}
 </header>
 
 <!-- ════════════════════════════════════════
+     MAY 6 PANEL
+════════════════════════════════════════ -->
+<div id="may06" class="tab-panel active">
+
+  <div class="stats-bar">
+    <div class="stats-grid">
+      <div class="stat-cell"><div class="stat-val">1대1 협상</div><div class="stat-lbl">삼바 노사 대표위원 오늘 담판</div></div>
+      <div class="stat-cell"><div class="stat-val">준법투쟁</div><div class="stat-lbl">전면파업 종료 → 무기한 압박</div></div>
+      <div class="stat-cell"><div class="stat-val">100일 등재</div><div class="stat-lbl">희귀질환 약가 신속등재 시행</div></div>
+      <div class="stat-cell"><div class="stat-val">D-23</div><div class="stat-lbl">ASCO 2026 · 5월 29일 개막</div></div>
+    </div>
+  </div>
+
+  <main class="main">
+
+    <div class="sec">
+      <div class="sec-head">
+        <span class="sec-num">01</span>
+        <h2 class="sec-title">삼성바이오로직스 준법투쟁 돌입 — 오늘 1대1 담판·8일 노사정 회의가 분수령</h2>
+        <span class="badge b-danger">노사 후속</span>
+      </div>
+      <div class="hl">
+        <div class="hl-title">파업 5일 종료, 6일 현장 복귀 — 연장·휴일근무 거부로 생산 차질 지속</div>
+        <div class="hl-body">삼성바이오로직스 노조가 5일 5일간의 전면 파업을 마무리하고 오늘 현장에 복귀했다. 그러나 연장·휴일 근무를 거부하는 무기한 준법투쟁으로 쟁의를 이어간다. 오늘 노사 대표교섭위원 1대1 미팅과 8일 노사정 미팅이 예정돼 있어 이번 주가 최대 고비다. 24시간 연속 가동이 필수인 바이오의약품 특성상 준법투쟁만으로도 생산 차질이 불가피하다.</div>
+      </div>
+      <div class="card">
+        <div class="card-head">
+          <div class="card-title">노조 "빈손 협상 거부 — 사측 의사결정권자 참석·실질안 제시 촉구"</div>
+          <span class="badge b-danger">협상 쟁점</span>
+        </div>
+        <div class="card-body">노조는 4일 협상에서 사측이 결정권 없는 실무진만 내보냈다고 비판했다. 핵심 쟁점은 ① 임금 14% 인상 vs 사측 6.2%, ② 영업이익 20% 성과급, ③ 채용·M&A 등 인사·경영 사안에 대한 노조 사전 동의권 명문화다. 사측은 인사·경영권 침해라며 3번 항목을 수용 불가 입장이다.</div>
+        <div class="card-foot">출처: 이데일리 · 헤럴드경제 · EBN (2026.05.05~06)</div>
+      </div>
+      <div class="card">
+        <div class="card-head">
+          <div class="card-title">파업 여파 — 암·HIV·아토피 23개 제품 배치 중단, "1분기 농사 통째로 날릴 판"</div>
+          <span class="badge b-amber">손실 현황</span>
+        </div>
+        <div class="card-body">파업 기간 암·HIV·아토피 등 23개 제품의 배치 생산이 중단됐다. 최소 손실 6,400억원은 1분기 영업이익 5,807억원을 초과한다. 파이낸셜뉴스는 "1분기 농사를 통째로 날릴 판"이라 표현했다. 학계에서는 노조의 인사·경영권 요구가 과도하다는 비판도 제기됐다.</div>
+        <div class="card-foot">출처: 파이낸셜뉴스 · 펜앤마이크 · 국민일보 (2026.05.05)</div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="sec">
+      <div class="sec-head">
+        <span class="sec-num">02</span>
+        <h2 class="sec-title">국내 약가제도 대개편 — 희귀질환 신속등재 100일·약가 유연계약제 본격화</h2>
+        <span class="badge b-teal">정책·제도</span>
+      </div>
+      <div class="banner ban-times"><div class="bdot"></div>바이오타임즈 · 약사공론 · 히트뉴스 주요 보도</div>
+      <div class="hl teal">
+        <div class="hl-title">330일→150일로 대폭 단축 — 신약 환자 접근성 획기적 개선 기대</div>
+        <div class="hl-body">보건복지부가 2026년부터 중증·희귀난치질환 치료 신약의 건강보험 등재 행정절차를 기존 330일에서 최대 150일로 단축한다. 식약처 허가·급여적정성 평가·약가 협상을 병행 트랙으로 동시 진행하는 방식이다. 약가 유연계약제(이중약가제)도 확대해 신약·바이오시밀러까지 약가환급제 적용 범위를 넓힌다.</div>
+      </div>
+      <div class="card">
+        <div class="card-head">
+          <div class="card-title">제네릭 약가 산정률 53.55%→45%로 단계 인하 — 환자단체 "10년 유예 미온적" 반발</div>
+          <span class="badge b-amber">제네릭 개편</span>
+        </div>
+        <div class="card-body">정부는 제네릭 기본 약가 산정률을 현행 53.55%에서 최종 45%로 낮추되, 혁신형 제약기업은 최대 4년간 49%를 유지한다. 환자·소비자연대는 "10년의 단계적 유예는 시장 구조 개편을 사실상 무기한 지연한다"고 비판했다. 약사공론은 "14년 만의 약가 개편인 만큼 업계와 환자 모두의 기대가 엇갈린다"고 분석했다.</div>
+        <div class="card-foot">출처: 약사공론 · 히트뉴스 · 복지부 (2026.03.26~04)</div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="sec">
+      <div class="sec-head">
+        <span class="sec-num">03</span>
+        <h2 class="sec-title">FDA 2026년 3월 승인 신약 총정리 — 노보 주1회 인슐린·유전자치료제 등 패러다임 전환</h2>
+        <span class="badge b-success">FDA 승인 총정리</span>
+      </div>
+      <div class="banner ban-bios"><div class="bdot"></div>약사공론 · 바이오스펙테이터 분석 보도</div>
+      <div class="card">
+        <div class="card-head">
+          <div class="card-title">노보 노디스크 '아위클리' — 세계 최초 주1회 기저 인슐린, 당뇨 치료 패러다임 전환</div>
+          <span class="badge b-success">FDA 승인</span>
+        </div>
+        <div class="card-body">노보 노디스크의 인슐린 이코덱(insulin icodec)이 '아위클리(Awiqli)'라는 브랜드로 FDA 승인을 받았다. 기존 매일 투여에서 주 1회로 전환해 환자 복약 순응도를 크게 높일 것으로 기대된다. 인슐린 치료 50년 만의 패러다임 전환이라는 평가다.</div>
+        <div class="card-foot">출처: 약사공론 (2026.04.06)</div>
+      </div>
+      <div class="card">
+        <div class="card-head">
+          <div class="card-title">로켓 파마 '크레슬라디' 유전자치료제 + 코셉트 '리파이올리' 백금내성 난소암 + 테바 데노수맙 바이오시밀러</div>
+          <span class="badge b-purple">다양한 혁신</span>
+        </div>
+        <div class="card-body">로켓 파마슈티컬스의 '크레슬라디'는 소아 희귀 백혈구 결핍증(LAD-I) 대상 유전자치료제로 3월 26일 승인됐다. 코셉트 테라퓨틱스의 '리파이올리'는 백금 내성 난소암 병용 치료제로, 테바의 '폰림시'는 데노수맙 첫 바이오시밀러로 각각 승인됐다. 3월 승인 트렌드는 '희귀질환 유전자치료'와 '복약 편의성 혁신' 두 축으로 요약된다.</div>
+        <div class="card-foot">출처: 약사공론 (2026.04.06)</div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="sec">
+      <div class="sec-head">
+        <span class="sec-num">04</span>
+        <h2 class="sec-title">바이오스펙테이터 2026년 전망 — "붉은 말의 해, 3년 혹한기 끝 반등 시작"</h2>
+        <span class="badge b-purple">산업 분석</span>
+      </div>
+      <div class="banner ban-bios"><div class="bdot"></div>바이오스펙테이터 2026 연간 전망 보도</div>
+      <div class="card">
+        <div class="card-head">
+          <div class="card-title">나스닥 바이오텍 XBI 31% 반등 — 빅파마 BD 재개·특허절벽 대응 M&A 가속</div>
+          <span class="badge b-purple">시장 반등</span>
+        </div>
+        <div class="card-body">바이오스펙테이터는 2025년 하반기를 최저점으로 바이오 섹터가 반등을 시작했다고 분석했다. 2025년 9월~연말 나스닥 바이오텍 지수(XBI)가 31.28% 상승했으며, 빅파마가 중단했던 사업개발(BD) 활동을 재개해 탑10 인수딜 중 8건이 하반기에 몰렸다. 2026~2029년 키트루다·옵디보·다잘렉스 등 2,000억달러 규모 블록버스터 특허 만료가 M&A 경쟁의 핵심 동력이다.</div>
+        <div class="card-foot">출처: 바이오스펙테이터 (2026.01.01)</div>
+      </div>
+      <div class="card">
+        <div class="card-head">
+          <div class="card-title">바이오타임즈 2026 신약 키워드 — "AI 전면 확산·ADC·GLP-1·희귀질환·플랫폼 빅딜"</div>
+          <span class="badge b-teal">키워드</span>
+        </div>
+        <div class="card-body">바이오타임즈는 2026년 신약 개발 5대 키워드로 AI 전면 확산, ADC 차세대 플랫폼, GLP-1 대사질환 확장, 희귀질환 가속등재, 조 단위 플랫폼 빅딜을 꼽았다. 특허만료 압박을 받는 빅파마가 초기 단계 바이오텍 인수·옵션형 기술이전 계약을 확대하면서 국내 K-바이오 플랫폼에도 협력 기회가 확대될 것으로 전망했다.</div>
+        <div class="card-foot">출처: 바이오타임즈 (2025.12.14)</div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="sec">
+      <div class="sec-head">
+        <span class="sec-num">05</span>
+        <h2 class="sec-title">이주의 캘린더 — ASCO D-23 · 한미 MASH 2b상 EASL 발표 D-21</h2>
+        <span class="badge b-info">이벤트 캘린더</span>
+      </div>
+      <div class="card">
+        <div class="card-head">
+          <div class="card-title">5월 27일 EASL 한미약품 MASH 2b상 + 5월 29일 ASCO 개막 — 이번 주 최대 주목</div>
+          <span class="badge b-info">임박 이벤트</span>
+        </div>
+        <div class="card-body">한미약품의 MSD 기술이전 MASH 치료제 에피노페그듀타이드 임상 2b상 탑라인 결과가 오는 27일 EASL(유럽간학회)에서 발표될 가능성이 높다. 긍정적 데이터 시 K-바이오 최대 기술이전 마일스톤이 촉발될 수 있다. ASCO 2026은 5월 29일~6월 2일 시카고에서 열리며 에스티큐브·신라젠·바이젠셀·지아이이노베이션 등이 발표한다.</div>
+        <div class="card-foot">출처: 하나증권 Biweekly · 더바이오 · 서울경제</div>
+      </div>
+      <div class="card">
+        <div class="card-head">
+          <div class="card-title">5월 24일 LEQEMBI SC PDUFA · 6월 8일 삼성바이오 노사정 회의 — 연속 이벤트</div>
+          <span class="badge b-success">주요 일정</span>
+        </div>
+        <div class="card-body">바이오젠·에자이의 레켐비 피하주사 자가투여 제형 PDUFA가 5월 24일로 잡혀 있어 조기 승인 가능성도 주목된다. 국내에서는 8일 삼성바이오로직스 노사정 회의가 준법투쟁 장기화 여부를 결정짓는 마지막 협상 테이블이 될 전망이다.</div>
+        <div class="card-foot">출처: Biogen IR · 이데일리 · 헤럴드경제</div>
+      </div>
+    </div>
+
+  </main>
+
+</div><!-- /may06 -->
+
+<!-- ════════════════════════════════════════
      MAY 5 PANEL
 ════════════════════════════════════════ -->
-<div id="may05" class="tab-panel active">
+<div id="may05" class="tab-panel">
 
   <div class="stats-bar">
     <div class="stats-grid">
@@ -832,7 +987,7 @@ hr{border:none;border-top:1px solid var(--border);margin:2rem 0}
 <footer class="footer">
   <div class="footer-inner">
     <div class="footer-title">K-바이오 Daily Report</div>
-    <div class="footer-meta">VOL.8–11 · 2026.05.02–05 · AI 보조 편집</div>
+    <div class="footer-meta">VOL.8–12 · 2026.05.02–06 · AI 보조 편집</div>
     <div class="footer-pills">
       <span class="fp">더바이오</span><span class="fp">히트뉴스</span>
       <span class="fp">데일리팜</span><span class="fp">팜이데일리</span>
