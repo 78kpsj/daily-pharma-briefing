@@ -161,8 +161,12 @@ hr{border:none;border-top:1px solid var(--border);margin:2rem 0}
   </div>
   <!-- DATE TABS -->
   <div class="tab-bar">
-    <button class="tab-btn active" onclick="switchTab('may04', this)">
-      <span class="tab-date">5월 4일 (월)<span class="tab-new">NEW</span></span>
+    <button class="tab-btn active" onclick="switchTab('may05', this)">
+      <span class="tab-date">5월 5일 (화)<span class="tab-new">NEW</span></span>
+      <span class="tab-sub">VOL.11 · 5개 이슈</span>
+    </button>
+    <button class="tab-btn" onclick="switchTab('may04', this)">
+      <span class="tab-date">5월 4일 (월)</span>
       <span class="tab-sub">VOL.10 · 6개 이슈</span>
     </button>
     <button class="tab-btn" onclick="switchTab('may03', this)">
@@ -177,9 +181,162 @@ hr{border:none;border-top:1px solid var(--border);margin:2rem 0}
 </header>
 
 <!-- ════════════════════════════════════════
+     MAY 5 PANEL
+════════════════════════════════════════ -->
+<div id="may05" class="tab-panel active">
+
+  <div class="stats-bar">
+    <div class="stats-grid">
+      <div class="stat-cell"><div class="stat-val">준법투쟁</div><div class="stat-lbl">삼바 파업 종료→무기한 준법투쟁</div></div>
+      <div class="stat-cell"><div class="stat-val">6,8일</div><div class="stat-lbl">삼바 추가 노사 대화 예정</div></div>
+      <div class="stat-cell"><div class="stat-val">$850억</div><div class="stat-lbl">GLP-1 2026년 시장 전망</div></div>
+      <div class="stat-cell"><div class="stat-val">D-24</div><div class="stat-lbl">ASCO 2026 · 5월 29일 개막</div></div>
+    </div>
+  </div>
+
+  <main class="main">
+
+    <div class="sec">
+      <div class="sec-head">
+        <span class="sec-num">01</span>
+        <h2 class="sec-title">삼성바이오로직스 파업 종료 — 6일부터 무기한 준법투쟁 전환, 재파업 불씨</h2>
+        <span class="badge b-danger">파업 후속</span>
+      </div>
+      <div class="hl">
+        <div class="hl-title">5일 전면 파업 종료, 6일 현장 복귀…연장·휴일근무 거부로 무기한 압박</div>
+        <div class="hl-body">삼성바이오로직스 노조가 예정대로 5일 전면 파업을 마무리하고, 6일부터 연장근무·휴일근무 거부 방식의 무기한 준법투쟁으로 전환한다. 4일 중부지방고용노동청 중재 하에 두 차례 대화를 진행했으나 합의에 실패했다. 오는 6일과 8일 추가 노사 대화가 예정돼 있으며, 이번 주가 파업 장기화 여부를 결정짓는 분수령이 될 전망이다.</div>
+      </div>
+      <div class="card">
+        <div class="card-head">
+          <div class="card-title">암·HIV·아토피 치료제 등 23개 제품 배치 중단 — "납기 불확실성, 글로벌 수주 신뢰에 직격"</div>
+          <span class="badge b-danger">생산 차질</span>
+        </div>
+        <div class="card-body">파업 기간 동안 암·HIV·아토피 치료제 등 23개 제품의 배치 생산 프로세스가 중단됐다. 업계는 단기 손실(최대 6,400억원)보다 글로벌 CDMO 시장에서의 납기 신뢰성 훼손을 더 큰 리스크로 본다. 론자·후지필름 등 경쟁사가 수주 기회를 노리고 있는 만큼, 노사 간 신속한 타결이 절실하다는 지적이다.</div>
+        <div class="card-foot">출처: 머니투데이 · EBN뉴스 · 헤럴드경제 (2026.05.04~05)</div>
+      </div>
+      <div class="card">
+        <div class="card-head">
+          <div class="card-title">노조, '1차 총파업' 규정…2차 파업 카드 유지 / 삼성전자도 5월 21일 총파업 예고</div>
+          <span class="badge b-amber">재파업 위험</span>
+        </div>
+        <div class="card-body">노조는 이번 파업을 '1차 총파업'으로 명시하고 2차 총파업 가능성을 열어두고 있다. 같은 시기 삼성전자 노조도 5월 21일 총파업을 예고하며 삼성 그룹 전반으로 노사 갈등이 확산되는 양상이다. 리얼미터 조사에 따르면 국민 69.3%가 삼성전자 파업을 "산업 경쟁력에 악영향"으로 평가해 여론은 부정적이다.</div>
+        <div class="card-foot">출처: 스마트비즈 · 뉴데일리 (2026.05.03~05)</div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="sec">
+      <div class="sec-head">
+        <span class="sec-num">02</span>
+        <h2 class="sec-title">릴리, 2025년 글로벌 전문의약품 매출 1위 등극 — 2032년까지 1위 유지 전망</h2>
+        <span class="badge b-purple">글로벌 산업</span>
+      </div>
+      <div class="banner ban-times"><div class="bdot"></div>바이오타임즈 · 더바이오 · 히트뉴스 동시 보도</div>
+      <div class="dark-card">
+        <div class="dk-tag">GLOBAL MARKET SHIFT</div>
+        <div class="dk-title">일라이 릴리, 2025년 처방의약품 매출 $608억 — GLP-1 마운자로·젭바운드로 J&J 제치고 1위</div>
+        <div class="dk-body">한국바이오협회 바이오경제연구센터 자료에 따르면 일라이 릴리는 2025년 처방의약품 매출 608억달러(약 89.4조원)를 기록하며 사상 처음으로 글로벌 1위에 올랐다. 2024년 대비 200억달러(49%) 급증한 수치다. 마운자로(터제파타이드)와 젭바운드의 합산 매출은 365억달러로 전체 성장을 견인했으며, Evaluate Pharma는 2026년 GLP-1 시장 총규모가 약 850억달러에 달할 것으로 전망했다.</div>
+        <div class="dk-stats">
+          <div class="dks"><div class="dks-val">$608억</div><div class="dks-lbl">릴리 2025 매출<br>(1위)</div></div>
+          <div class="dks"><div class="dks-val">+49%</div><div class="dks-lbl">전년比 성장률<br>(업계 최고)</div></div>
+          <div class="dks"><div class="dks-val">$850억</div><div class="dks-lbl">GLP-1 시장<br>2026년 전망</div></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-head">
+          <div class="card-title">단일 품목 1위는 키트루다 $316억 — 2026년 SC 제형 전환으로 IV 매출 감소 전망</div>
+          <span class="badge b-info">제품 순위</span>
+        </div>
+        <div class="card-body">단일 품목별로는 MSD 키트루다가 316억달러로 1위를 지켰다. 2025년 첫 매출이 기록된 SC 제형 '키트루다 QLEX'로 처방이 이동함에 따라 2026년 이후 IV 제형 매출은 감소할 것으로 예측됐다. 2026년 상위 10개 의약품에는 키트루다·마운자로·스카이리치·젭바운드·듀피젠트·오젬픽·다잘렉스·위고비·빅타비·엘리퀴스가 꼽혔다.</div>
+        <div class="card-foot">출처: 더바이오 · Evaluate Pharma · 한국바이오협회 (2026.04.22)</div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="sec">
+      <div class="sec-head">
+        <span class="sec-num">03</span>
+        <h2 class="sec-title">셀트리온, 세계 최초 인플릭시맙 IV 액상 제형 '램시마 IV' 유럽 출시</h2>
+        <span class="badge b-success">글로벌 출시</span>
+      </div>
+      <div class="hl green">
+        <div class="hl-title">노르웨이·덴마크 입찰 선점, 네덜란드 IV 시장 35% 확보 — 特許까지 등록</div>
+        <div class="hl-body">셀트리온이 세계에서 유일하게 보유한 인플릭시맙 IV 액상 제형 '램시마 IV'를 유럽에 출시했다. 노르웨이·덴마크 국가 입찰에서 선제 수주에 성공했고, 네덜란드에서는 IV 시장 35% 점유율을 조기 확보했다. EU5 전 국가에 특허 등록을 완료해 경쟁사 진입을 차단했다. 기존 동결건조 분말 제형에서 액상 제형으로 전환 시 의료 현장의 준비 시간과 비용이 크게 절감된다.</div>
+      </div>
+      <div class="card">
+        <div class="card-head">
+          <div class="card-title">램시마 포트폴리오 유럽 인플릭시맙 시장 점유율 68% — IV·SC 전 제형 풀라인업 보유</div>
+          <span class="badge b-success">시장 지위</span>
+        </div>
+        <div class="card-body">IQVIA 데이터 기준 램시마 제품군(IV+SC)은 유럽 인플릭시맙 시장에서 68% 점유율로 1위를 유지하고 있으며, 영국 87%, 스페인 80%로 주요국에서 압도적이다. IV·SC·액상 등 인플릭시맙 전 제형을 보유한 기업은 셀트리온이 유일하며, 이는 바이오시밀러 시장에서 전례 없는 경쟁 우위로 꼽힌다.</div>
+        <div class="card-foot">출처: 더바이오 · 셀트리온 IR · IQVIA (2026.03.11)</div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="sec">
+      <div class="sec-head">
+        <span class="sec-num">04</span>
+        <h2 class="sec-title">에이비엘바이오 ABL001 담도암 FDA 가속승인 신청 준비 + 릴리 경구 비만약 '파운다요' 4월 FDA 승인</h2>
+        <span class="badge b-info">FDA 모멘텀</span>
+      </div>
+      <div class="banner ban-bios"><div class="bdot"></div>바이오스펙테이터 · 메디게이트뉴스 보도</div>
+      <div class="card">
+        <div class="card-head">
+          <div class="card-title">에이비엘바이오 ABL001(토베시미그), 컴퍼스 테라퓨틱스 담도암 2/3상 진행 중 — 올해 FDA 가속승인 기대</div>
+          <span class="badge b-purple">임상 모멘텀</span>
+        </div>
+        <div class="card-body">에이비엘바이오의 ABL001(성분명 토베시미그)은 컴퍼스 테라퓨틱스가 담도암 2차 치료제로 미국에서 COMPANION-002(2/3상) 임상을 진행 중이다. 메디게이트뉴스는 2026년 주목할 K-바이오 모멘텀으로 ABL001의 FDA 가속승인 신청 가능성을 최상위에 꼽았으며, 승인 시 국내 이중항체 플랫폼 기반의 첫 미국 신약 상용화 사례가 된다.</div>
+        <div class="card-foot">출처: 메디게이트뉴스 (2026.01.27)</div>
+      </div>
+      <div class="card">
+        <div class="card-head">
+          <div class="card-title">릴리, 경구용 비만치료제 '파운다요(오포글리프론)' 4월 1일 FDA 승인 — 비만약 시장 경구제 시대 개막</div>
+          <span class="badge b-accent">FDA 승인</span>
+        </div>
+        <div class="card-body">일라이 릴리의 경구용 GLP-1 비만 치료제 '파운다요(성분명 오포글리프론)'가 4월 1일 FDA 승인을 받으며 주사제 중심의 비만약 시장에 경구제 시대를 열었다. 과체중·비만 성인 중 체중 관련 동반질환 보유자를 적응증으로 하며, 0.8mg에서 최대 17.2mg까지 증량 가능하다. 비만치료제의 접근성이 획기적으로 넓어질 것으로 기대된다.</div>
+        <div class="card-foot">출처: 나무위키 · 히트뉴스 (2026.04.01)</div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="sec">
+      <div class="sec-head">
+        <span class="sec-num">05</span>
+        <h2 class="sec-title">바이오타임즈 위클리 픽 — 제약 자회사 중복상장 규제 앞두고 재내부화 움직임</h2>
+        <span class="badge b-teal">제도·트렌드</span>
+      </div>
+      <div class="banner ban-times"><div class="bdot"></div>바이오타임즈 · EBN뉴스 보도</div>
+      <div class="card">
+        <div class="card-head">
+          <div class="card-title">7월 중복상장 규제 시행 앞두고 제약바이오, 흩어진 자회사 다시 품는다</div>
+          <span class="badge b-teal">정책</span>
+        </div>
+        <div class="card-body">7월 중복상장 규제 시행을 앞두고 국내 제약바이오 기업들이 상장 자회사를 흡수합병하거나 재내부화하는 움직임이 가속화되고 있다. 고려대 의료기술지주 자회사 온코마스터의 온코크로스 합병이 대표 사례다. 규제 강화로 개별 자회사 상장이 어려워지면서 모회사 중심의 포트폴리오 재편이 바이오산업 전반의 구조 변화로 이어질 전망이다.</div>
+        <div class="card-foot">출처: EBN뉴스 · 더바이오 (2026.05.04~05)</div>
+      </div>
+      <div class="card">
+        <div class="card-head">
+          <div class="card-title">글로벌 투자사가 본 K-바이오 — "기술 충분, 사업화·전략은 과제"</div>
+          <span class="badge b-amber">투자 시각</span>
+        </div>
+        <div class="card-body">히트뉴스가 보도한 글로벌 투자사 진단에 따르면, 한국 바이오 산업은 기술 경쟁력은 확보했으나 임상 데이터 검증과 사업화 전략 측면에서 여전히 글로벌 기준에 미치지 못한다는 평가를 받았다. AI 기반 진단·신약 개발 분야에서는 특히 사업화 전략 부재가 지적됐으며, 2026년은 기술이전 성과를 실질적 매출로 전환하는 원년이 될 것인지 시험대에 올랐다는 분석이다.</div>
+        <div class="card-foot">출처: 히트뉴스 (2026.05.05)</div>
+      </div>
+    </div>
+
+  </main>
+
+</div><!-- /may05 -->
+
+<!-- ════════════════════════════════════════
      MAY 4 PANEL
 ════════════════════════════════════════ -->
-<div id="may04" class="tab-panel active">
+<div id="may04" class="tab-panel">
 
   <div class="stats-bar">
     <div class="stats-grid">
@@ -675,7 +832,7 @@ hr{border:none;border-top:1px solid var(--border);margin:2rem 0}
 <footer class="footer">
   <div class="footer-inner">
     <div class="footer-title">K-바이오 Daily Report</div>
-    <div class="footer-meta">VOL.8–10 · 2026.05.02–04 · AI 보조 편집</div>
+    <div class="footer-meta">VOL.8–11 · 2026.05.02–05 · AI 보조 편집</div>
     <div class="footer-pills">
       <span class="fp">더바이오</span><span class="fp">히트뉴스</span>
       <span class="fp">데일리팜</span><span class="fp">팜이데일리</span>
