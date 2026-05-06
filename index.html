@@ -161,8 +161,12 @@ hr{border:none;border-top:1px solid var(--border);margin:2rem 0}
   </div>
   <!-- DATE TABS -->
   <div class="tab-bar">
-    <button class="tab-btn active" onclick="switchTab('may06', this)">
-      <span class="tab-date">5월 6일 (수)<span class="tab-new">NEW</span></span>
+    <button class="tab-btn active" onclick="switchTab('may07', this)">
+      <span class="tab-date">5월 7일 (목)<span class="tab-new">NEW</span></span>
+      <span class="tab-sub">VOL.13 · 5개 이슈</span>
+    </button>
+    <button class="tab-btn" onclick="switchTab('may06', this)">
+      <span class="tab-date">5월 6일 (수)</span>
       <span class="tab-sub">VOL.12 · 5개 이슈</span>
     </button>
     <button class="tab-btn" onclick="switchTab('may05', this)">
@@ -185,9 +189,160 @@ hr{border:none;border-top:1px solid var(--border);margin:2rem 0}
 </header>
 
 <!-- ════════════════════════════════════════
+     MAY 7 PANEL
+════════════════════════════════════════ -->
+<div id="may07" class="tab-panel active">
+
+  <div class="stats-bar">
+    <div class="stats-grid">
+      <div class="stat-cell"><div class="stat-val">협상 취소</div><div class="stat-lbl">삼바 6일 1대1 담판 파행</div></div>
+      <div class="stat-cell"><div class="stat-val">신약 43호</div><div class="stat-lbl">퓨쳐켐 전립선암 진단 허가</div></div>
+      <div class="stat-cell"><div class="stat-val">MASH 연기</div><div class="stat-lbl">한미 에피노페그듀타이드 EASL 지연</div></div>
+      <div class="stat-cell"><div class="stat-val">D-22</div><div class="stat-lbl">ASCO 2026 · 5월 29일 개막</div></div>
+    </div>
+  </div>
+
+  <main class="main">
+
+    <div class="sec">
+      <div class="sec-head">
+        <span class="sec-num">01</span>
+        <h2 class="sec-title">삼성바이오로직스 노사 갈등 격화 — 6일 1대1 담판 전격 취소, 2차 파업 불씨</h2>
+        <span class="badge b-danger">긴급</span>
+      </div>
+      <div class="hl">
+        <div class="hl-title">통화 내용 유출·형사고발…6일 면담 취소, 8일 노사정 회의만 남아</div>
+        <div class="hl-body">어제(6일) 오후 3시 예정됐던 삼성바이오로직스 노사 대표교섭위원 1대1 미팅이 전격 취소됐다. 노조 측이 사전 통화 내용을 블라인드 앱에 공개한 것이 발단이었다. 여기에 사측이 파업 기간 중 무단 공정구역 진입 노조원을 업무방해 혐의로 형사고발하면서 법적 공방까지 불거졌다. 이로써 8일 노사정 회의가 사실상 마지막 협상 기회가 됐으며, 여기서도 진전이 없을 경우 2차 전면 파업 가능성이 거론되고 있다.</div>
+      </div>
+      <div class="card">
+        <div class="card-head">
+          <div class="card-title">사측, 노조원 형사고발 — "GMP 구역 무단 진입, 직무 범위 벗어난 행위"</div>
+          <span class="badge b-danger">법적 공방</span>
+        </div>
+        <div class="card-body">삼성바이오로직스는 파업 기간(1~5일) 중 타 부서 공정구역에 무단 진입해 감시활동을 한 노조원 1명을 업무방해 혐의로 고발했다. GMP·SOP 상 비인가 인원의 제조 구역 출입이 엄격히 금지된 만큼, 의약품 품질 안전 문제까지 법적 공방으로 번졌다. 노조는 강하게 반발하며 사측의 협상 의지에 의문을 제기했다.</div>
+        <div class="card-foot">출처: 아시아투데이 · 인사이트 · 뉴스핌 (2026.05.06)</div>
+      </div>
+      <div class="card">
+        <div class="card-head">
+          <div class="card-title">준법투쟁만으로도 연속 공정 차질 불가피 — 2차 파업 시 수주 경쟁력 '치명타'</div>
+          <span class="badge b-amber">전망</span>
+        </div>
+        <div class="card-body">24시간 연속 가동이 필수인 바이오의약품 특성상 연장·휴일근무 거부만으로도 생산 차질이 불가피하다. 업계는 "계약 불이행 패널티, 신규 수주 신뢰 하락, 대체 CDMO로의 물량 이전이 맞물려 있다"고 우려한다. 사측은 노조의 인사·경영권 사전 동의 요구는 경영권 고유 권한이라며 수용 불가 입장을 유지하고 있다.</div>
+        <div class="card-foot">출처: 뉴스핌 · 중부일보 (2026.05.06~07)</div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="sec">
+      <div class="sec-head">
+        <span class="sec-num">02</span>
+        <h2 class="sec-title">퓨쳐켐, 전립선암 진단 방사성의약품 '프로스타뷰' 국내 43호 신약 허가</h2>
+        <span class="badge b-success">신약 허가</span>
+      </div>
+      <div class="hl green">
+        <div class="hl-title">국내 최초 PSMA PET-CT 진단제 — 기존 대비 정확도 26.8%p 향상, 주가 25% 급등</div>
+        <div class="hl-body">퓨쳐켐의 전립선암 진단 방사성의약품 '프로스타뷰주사액([18F]플로라스타민)'이 4월 30일자로 식약처 신약 허가를 취득하며 국내 43번째 신약에 등록됐다. 양전자방출동위원소 F-18에 PSMA 표적 펩타이드를 결합한 PET-CT 진단제로, 국내 11개 기관 임상 3상에서 양성예측도(PPV) 86.96%를 기록해 기존 영상검사(60.16%) 대비 26.79%p 높은 정확도를 입증했다. 허가 발표 당일(4일) 주가가 25% 급등하며 시장 기대를 반영했다.</div>
+      </div>
+      <div class="card">
+        <div class="card-head">
+          <div class="card-title">테라노스틱스 전환의 출발점 — 2030년 글로벌 시장 19조원, 중국·유럽 3상 진행 중</div>
+          <span class="badge b-success">글로벌 전략</span>
+        </div>
+        <div class="card-body">퓨쳐켐은 "프로스타뷰 허가는 단순 진단제 승인이 아니라 진단에서 치료로 이어지는 테라노스틱스 전환의 출발점"이라고 밝혔다. 전립선암은 국내 남성암 발병률 1위이며, 글로벌 PET-CT 전립선암 진단 시장은 미국 연간 40만 건 이상으로 2030년 약 19조원 규모가 전망된다. 현재 미국 1상 완료, 유럽·중국 3상 진행 중이다.</div>
+        <div class="card-foot">출처: 더바이오 · 서울경제 · 약사공론 · 한국경제 (2026.05.04~05)</div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="sec">
+      <div class="sec-head">
+        <span class="sec-num">03</span>
+        <h2 class="sec-title">한미약품 1분기 실적 — 영업이익 감소에도 R&D 10% 확대, MASH 데이터 발표 지연</h2>
+        <span class="badge b-info">1분기 실적</span>
+      </div>
+      <div class="banner ban-times"><div class="bdot"></div>바이오타임즈 · 히트뉴스 · 코메디닷컴 보도</div>
+      <div class="card">
+        <div class="card-head">
+          <div class="card-title">1분기 매출 3,929억·영업이익 536억 — 일회성 요인 빼면 펀더멘털 개선 중</div>
+          <span class="badge b-info">실적</span>
+        </div>
+        <div class="card-body">한미약품의 2026년 1분기 연결 기준 잠정 매출 3,929억원, 영업이익 536억원을 기록했다. 전년 동기 일회성 마일스톤 수익 제외 시 실질적 개선이 이뤄졌다는 평가다. 원외처방 매출 2,776억원으로 8년 연속 국내 1위를 유지했으며, 매출 대비 16%를 넘는 R&D 투자를 이어가고 있다.</div>
+        <div class="card-foot">출처: 코메디닷컴 · 더퍼블릭 (2026.05.04)</div>
+      </div>
+      <div class="card">
+        <div class="card-head">
+          <div class="card-title">MASH 치료제 에피노페그듀타이드 EASL 발표 지연 — MSD "데이터 분석 추가 시간 필요"</div>
+          <span class="badge b-amber">임상 지연</span>
+        </div>
+        <div class="card-body">5월 EASL(유럽간학회) 발표가 유력시됐던 MSD 기술이전 MASH 치료제 에피노페그듀타이드의 2b상 탑라인 데이터 공개가 지연될 전망이다. 하나증권은 "MSD가 최적 개발 방향 설정을 위한 데이터 분석에 추가 시간이 필요하다"고 밝혔다. 비만 신약 에페글레나타이드 연내 상용화, HM17321 MAD 단계 진입은 예정대로 추진된다.</div>
+        <div class="card-foot">출처: 코메디닷컴 · 하나증권 (2026.05.04~07)</div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="sec">
+      <div class="sec-head">
+        <span class="sec-num">04</span>
+        <h2 class="sec-title">히트뉴스 주목 — PROTAC 'VEPPANU' 국내 TPD 기업 수혜·MSD 키트루다 SC 급성장</h2>
+        <span class="badge b-purple">글로벌·K-바이오</span>
+      </div>
+      <div class="banner ban-bios"><div class="bdot"></div>히트뉴스 오늘 주요 보도 2선</div>
+      <div class="card">
+        <div class="card-head">
+          <div class="card-title">첫 PROTAC '베파누' FDA 승인…국내 TPD 공략 기업들 주목</div>
+          <span class="badge b-purple">PROTAC 후속</span>
+        </div>
+        <div class="card-body">히트뉴스는 아르비나스·화이자의 PROTAC 'VEPPANU(베파누)' FDA 승인을 기점으로 국내 TPD(표적 단백질 분해) 개발 기업들의 전략을 집중 조명했다. 분해항체(DAC), 비cIAP PROTAC, 분자 글루 등 다양한 TPD 플랫폼을 보유한 국내 기업들이 파이프라인 가치 재평가 수혜를 받을 것으로 분석됐다.</div>
+        <div class="card-foot">출처: 히트뉴스 (2026.05.07)</div>
+      </div>
+      <div class="card">
+        <div class="card-head">
+          <div class="card-title">MSD 1분기 키트루다 매출 11.8조원 — SC 제형 '키트루다 큐렉스' 25배 급성장</div>
+          <span class="badge b-info">빅파마 실적</span>
+        </div>
+        <div class="card-body">MSD의 2026년 1분기 키트루다 매출이 11.8조원을 기록했으며, 피하주사 제형 키트루다 큐렉스가 전분기 대비 25배 급성장했다. SC 제형으로의 처방 전환이 예상보다 빠르게 진행되고 있어 IV 제형 매출 감소가 앞당겨질 수 있다는 분석이 나온다. 유한양행 렉라자의 병용 파트너인 리브리반트 SC 제형 확산에도 긍정적 신호다.</div>
+        <div class="card-foot">출처: 더바이오 (2026.05.07)</div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="sec">
+      <div class="sec-head">
+        <span class="sec-num">05</span>
+        <h2 class="sec-title">바이오타임즈 픽 — 노보 ECO서 위고비 고용량·경구제 데이터 공개, GLP-1 경쟁 격화</h2>
+        <span class="badge b-teal">GLP-1·비만</span>
+      </div>
+      <div class="banner ban-times"><div class="bdot"></div>바이오타임즈 · 더바이오 보도</div>
+      <div class="card">
+        <div class="card-head">
+          <div class="card-title">위고비 고용량 2.4mg→3.2mg 임상 데이터 + 경구 세마글루티드 체중감량 업데이트</div>
+          <span class="badge b-teal">GLP-1</span>
+        </div>
+        <div class="card-body">노보 노디스크가 유럽비만학회(ECO)에서 위고비 고용량 제형(3.2mg) 임상 데이터와 경구용 세마글루티드의 체중감량 성적을 공개했다. 카그리세마(세마글루티드+카그릴린타이드)의 추가 임상 데이터도 함께 발표되며 경쟁력이 재부각됐다. 릴리 젭바운드와의 효능 비교 논쟁이 한층 가열될 전망이다.</div>
+        <div class="card-foot">출처: 더바이오 · 바이오타임즈 (2026.05.07)</div>
+      </div>
+      <div class="card">
+        <div class="card-head">
+          <div class="card-title">누칼라·자카비 5월 급여 등재 + 보령 렌비마 제네릭 키트루다 병용 적응증 논란</div>
+          <span class="badge b-amber">국내 급여·특허</span>
+        </div>
+        <div class="card-body">한국GSK 천식 치료제 누칼라 오토인젝터와 자카비(룩소리티닙)가 5월부터 급여 목록에 신규 등재됐다. 한편 올해 3월 렌비마 제네릭 출시 자격을 확보한 보령이 키트루다 병용 적응증 관련 미등재 용도특허심판에서 패소해 해당 병용 처방 적응증을 놓칠 위기에 처했다는 보도가 나왔다.</div>
+        <div class="card-foot">출처: 히트뉴스 (2026.05.07)</div>
+      </div>
+    </div>
+
+  </main>
+
+</div><!-- /may07 -->
+
+<!-- ════════════════════════════════════════
      MAY 6 PANEL
 ════════════════════════════════════════ -->
-<div id="may06" class="tab-panel active">
+<div id="may06" class="tab-panel">
 
   <div class="stats-bar">
     <div class="stats-grid">
@@ -987,7 +1142,7 @@ hr{border:none;border-top:1px solid var(--border);margin:2rem 0}
 <footer class="footer">
   <div class="footer-inner">
     <div class="footer-title">K-바이오 Daily Report</div>
-    <div class="footer-meta">VOL.8–12 · 2026.05.02–06 · AI 보조 편집</div>
+    <div class="footer-meta">VOL.8–13 · 2026.05.02–07 · AI 보조 편집</div>
     <div class="footer-pills">
       <span class="fp">더바이오</span><span class="fp">히트뉴스</span>
       <span class="fp">데일리팜</span><span class="fp">팜이데일리</span>
