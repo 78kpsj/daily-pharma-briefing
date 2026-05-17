@@ -161,8 +161,12 @@ hr{border:none;border-top:1px solid var(--border);margin:2rem 0}
   </div>
   <!-- DATE TABS -->
   <div class="tab-bar">
-    <button class="tab-btn active" onclick="switchTab('may16', this)">
-      <span class="tab-date">5월 16일 (토)<span class="tab-new">NEW</span></span>
+    <button class="tab-btn active" onclick="switchTab('may17', this)">
+      <span class="tab-date">5월 17일 (일)<span class="tab-new">NEW</span></span>
+      <span class="tab-sub">VOL.23 · 5개 이슈</span>
+    </button>
+    <button class="tab-btn" onclick="switchTab('may16', this)">
+      <span class="tab-date">5월 16일 (토)</span>
       <span class="tab-sub">VOL.22 · 5개 이슈</span>
     </button>
     <button class="tab-btn" onclick="switchTab('may15', this)">
@@ -225,9 +229,170 @@ hr{border:none;border-top:1px solid var(--border);margin:2rem 0}
 </header>
 
 <!-- ════════════════════════════════════════
+     MAY 17 PANEL  ★ 연구자 중심
+════════════════════════════════════════ -->
+<div id="may17" class="tab-panel active">
+
+  <div class="stats-bar">
+    <div class="stats-grid">
+      <div class="stat-cell"><div class="stat-val">ASCO D-12</div><div class="stat-lbl">이번 주 최대 — 5.21 파업·5.24 LEQEMBI</div></div>
+      <div class="stat-cell"><div class="stat-val">오가노이드 × CRISPR</div><div class="stat-lbl">오가노이드사이언스–툴젠 Cas9 라이선스</div></div>
+      <div class="stat-cell"><div class="stat-val">Type II JAK2</div><div class="stat-lbl">Ajax AJ1-11095 — 기존 내성 극복 1상</div></div>
+      <div class="stat-cell"><div class="stat-val">미니 뇌 오가노이드</div><div class="stat-lbl">뇌질환 치료법 첫 임상 — Nature 2026</div></div>
+    </div>
+  </div>
+
+  <main class="main">
+
+    <!-- 01 오가노이드사이언스 × 툴젠 CRISPR 라이선스 -->
+    <div class="sec">
+      <div class="sec-head">
+        <span class="sec-num">01</span>
+        <h2 class="sec-title">오가노이드사이언스–툴젠, CRISPR-Cas9 라이선스 체결 — 오가노이드 기반 유전자 교정 치료제 개발 가속</h2>
+        <span class="badge b-purple">CRISPR · 오가노이드 · 유전자편집</span>
+      </div>
+      <div class="banner ban-bios"><div class="bdot"></div>데일리팜 보도 (2026.05.17)</div>
+      <div class="hl purple">
+        <div class="hl-title">줄기세포 유래 오가노이드에 CRISPR-Cas9 유전자 교정 결합 — 질환 모델링·치료제 개발 동시 추진</div>
+        <div class="hl-body">오가노이드사이언스가 툴젠의 CRISPR-Cas9 특허를 라이선스-인 계약으로 확보했다. 오가노이드(miniaturized organ-in-a-dish)는 줄기세포를 3차원 자기조직화 배양해 실제 장기 유사 구조를 구현한 기술이다. CRISPR-Cas9을 오가노이드에 적용하면 환자 유래 줄기세포에서 병원성 변이를 직접 교정한 치료용 오가노이드를 생산하거나, 질환 표현형을 재현한 모델 오가노이드로 신약 스크리닝을 고속화할 수 있다.</div>
+      </div>
+      <div class="card">
+        <div class="card-head">
+          <div class="card-title">CRISPR-Cas9 × 오가노이드 치료제 개발 전략 — 환자 유래 iPSC 교정 → 오가노이드 이식 치료 접근</div>
+          <span class="badge b-purple">iPSC · 오가노이드 치료 · MOA</span>
+        </div>
+        <div class="card-body">
+          환자 유래 유도만능줄기세포(iPSC)에서 CRISPR-Cas9으로 원인 변이를 교정한 뒤 해당 장기 오가노이드로 분화시켜 이식하는 전략은 낭성 섬유증, 망막 변성, 간 대사 희귀질환 등에서 활발히 연구 중이다. 툴젠의 Cas9 특허는 특히 정밀 염기 교정(base editing) 및 단일 염기 전환에 필요한 핵심 효소 구조에 관한 것으로, 오가노이드 치료제의 off-target 최소화 설계에 활용될 것으로 보인다. 이번 계약은 오가노이드사이언스가 AAV 유전자치료 시설(이연제약 협력)에 이어 CRISPR 편집 역량을 내재화하는 흐름의 일환이다.
+          <br><br>
+          <strong>참고:</strong> Clevers <em>et al., Science</em> 2016; Organoids — tools for disease modelling and drug development / Drost <em>et al., Nat Rev Cancer</em> 2018; CRISPR in organoids
+        </div>
+        <div class="card-foot">출처: 데일리팜 (2026.05.17)</div>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- 02 Ajax Ajax AJ1-11095 Type II JAK2 — 미래에셋 리포트 심층 분석 -->
+    <div class="sec">
+      <div class="sec-head">
+        <span class="sec-num">02</span>
+        <h2 class="sec-title">Ajax Therapeutics AJ1-11095 — Type II JAK2 저해제, 룩솔리티닙 내성 골수섬유증 1상 진행 중</h2>
+        <span class="badge b-amber">JAK2 Type II · 골수섬유증 · 내성 극복</span>
+      </div>
+      <div class="banner ban-bios"><div class="bdot"></div>미래에셋증권 제약/바이오 5월 리포트 심층 분석 (2026.05.05)</div>
+      <div class="card">
+        <div class="card-head">
+          <div class="card-title">Type I vs Type II JAK2 결합 — 룩솔리티닙이 못 잡는 비활성형 구조에 결합해 disease-modifying 효과 목표</div>
+          <span class="badge b-amber">JAK2 · Type II conformation · MPN</span>
+        </div>
+        <div class="card-body">
+          현재 골수섬유증(MF) 1차 치료 표준인 룩솔리티닙(Jakafi)과 페드라티닙(Inrebic)은 모두 JAK2의 활성형(Type I, DFG-in) 구조에 결합한다. 이들은 비장 크기 감소·증상 개선에는 효과적이나, 시간 경과에 따라 JAK2 신호가 재활성화되며 내성이 발생한다. AJ1-11095는 JAK2가 비활성형 구조(Type II, DFG-out)를 취할 때 결합하는 allosteric 기전을 사용한다. Type II 결합은 ① 더 깊고 지속적인 JAK2 억제(deeper and more durable efficacy), ② Type I 내성 환자 커버, ③ 질병 자체에 대한 disease-modifying 효과(섬유화 퇴행) 가능성을 제공한다. JAK2의 V617F 변이를 보유한 진성적혈구증가증(PV), MF 환자를 대상으로 AJX-101 임상 1상(Type I 기치료 환자 대상)이 진행 중이며, 2026년 후반 임상 PoC 데이터가 기대된다.
+          <br><br>
+          <strong>MOA:</strong> AJ1-11095 → JAK2 DFG-out 구조 결합 → activation loop 안정화 → STAT5 인산화 억제 → JAK-STAT 경로 지속 억제 / Type I 내성(STAT5 재활성화) 우회
+          <br><strong>참고:</strong> Bhatt <em>et al., Cancer Cell</em> 2012; JAK2 inhibitor resistance mechanisms / Verstovsek <em>et al., NEJM</em> 2010; Ruxolitinib in MF
+        </div>
+        <div class="card-foot">출처: 미래에셋증권 제약/바이오 5월 리포트 (2026.05.05)</div>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- 03 미니 뇌 오가노이드 첫 임상 -->
+    <div class="sec">
+      <div class="sec-head">
+        <span class="sec-num">03</span>
+        <h2 class="sec-title">실험실 배양 '미니 뇌' 오가노이드로 개발한 뇌질환 치료법, 2026년 첫 임상 진입</h2>
+        <span class="badge b-teal">뇌 오가노이드 · 신경과학 · 임상 1상</span>
+      </div>
+      <div class="banner ban-times"><div class="bdot"></div>BioIN 보도 (2026.04.10) · <em>Nature</em> 관련 연구 기반</div>
+      <div class="card">
+        <div class="card-head">
+          <div class="card-title">뇌 오가노이드 유래 신경세포 이식 치료 — 파킨슨병·ALS 대상 첫 임상, 도파민 뉴런 생착(engraftment) 확인</div>
+          <span class="badge b-teal">뇌 오가노이드 · 도파민 뉴런 · 이식 치료</span>
+        </div>
+        <div class="card-body">
+          실험실에서 배양한 미니 뇌(cerebral organoid) 유래 신경세포를 환자 뇌에 이식하는 치료법이 2026년 처음으로 임상 1상에 진입했다. 이 접근법은 인간 iPSC를 대뇌 오가노이드로 분화시킨 뒤, 특정 신경 하위유형(도파민 뉴런, 운동 뉴런)을 선별 증폭해 환자 뇌의 손상 부위에 이식하는 세포 대체 치료 전략이다. 영장류 모델에서 도파민 뉴런의 뇌 내 생착(engraftment)과 파킨슨병 운동 증상 개선이 확인됐다. 오가노이드 유래 세포는 기존 태아 조직 이식 대비 공여 세포 표준화·균질성 확보가 가능하다는 장점이 있다.
+          <br><br>
+          <strong>핵심 과제:</strong> 이식 세포의 숙주 신경망 통합 효율 / 종양화(teratoma) 위험 최소화 / 이식 후 면역 거부 반응 관리
+          <br><strong>참고:</strong> Bagley <em>et al., Nature Methods</em> 2017; Fusion cerebral organoids / Takahashi <em>et al., Cell</em> 2022; iPSC-derived dopaminergic neurons
+        </div>
+        <div class="card-foot">출처: BioIN (2026.04.10)</div>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- 04 이번 주(5.17~24) 핵심 임상·규제 총정리 -->
+    <div class="sec">
+      <div class="sec-head">
+        <span class="sec-num">04</span>
+        <h2 class="sec-title">이번 주 임상·규제 총정리 — LEQEMBI SC PDUFA D-7 · ASCO D-12 · FDA 오가노이드 가이드라인</h2>
+        <span class="badge b-info">주간 총정리 · 핵심 이벤트</span>
+      </div>
+      <div class="card">
+        <div class="card-head">
+          <div class="card-title">5.24 LEQEMBI IQLIK SC PDUFA — D-7: lecanemab 피하주사 자가투여 형태 알츠하이머 치료제 결정</div>
+          <span class="badge b-success">알츠하이머 · SC 제형 · PDUFA D-7</span>
+        </div>
+        <div class="card-body">
+          바이오젠·에자이의 레켐비 SC 자가주사 제형(LEQEMBI IQLIK, 주 1회)의 PDUFA 기한이 7일 후(5월 24일)다. 레켐비(lecanemab-irmb)는 아밀로이드 베타 프로토피브릴에 우선적으로 결합하는 IgG1 항체로, CLARITY AD 3상에서 CDR-SB(임상 치매 척도) 기저치 대비 변화를 위약 대비 0.45점 감소시켰다(27% 진행 억제). SC 제형 승인 시 현행 격주 2시간 정맥주사에서 주 1회 자가 피하주사로 전환되어 환자 접근성이 획기적으로 개선된다. 아밀로이드 관련 영상 이상(ARIA) 모니터링 프로토콜이 SC 전환에서 어떻게 적용될지가 핵심 검토 사항이다.
+        </div>
+        <div class="card-foot">출처: Biogen IR / van Dyck <em>et al., NEJM</em> 2023; CLARITY AD 3상</div>
+      </div>
+      <div class="card">
+        <div class="card-head">
+          <div class="card-title">FDA, 오가노이드 기반 임상 대체 시험법(NAM) 가이드라인 2026년 확대 시행 + ASCO D-12</div>
+          <span class="badge b-teal">NAM · 오가노이드 · FDA 정책</span>
+        </div>
+        <div class="card-body">
+          FDA는 동물실험 대체법(NAM, New Approach Methodologies)으로 오가노이드·장기칩(organ-on-chip) 기반 독성·효능 시험의 IND 신청 보완 자료로의 활용을 2026년부터 확대 허용하고 있다. 이는 특히 소규모 바이오텍의 초기 임상 전환 비용을 낮추고 pre-IND → IND 소요 기간 단축에 기여할 전망이다. 5월 29일 ASCO 개막(D-12)을 앞두고 이번 주 K-바이오 발표팀들의 시카고 현지 도착 및 포스터 설치가 시작된다.
+        </div>
+        <div class="card-foot">출처: 미래에셋 리포트 · FDA NAM 2026 가이드라인</div>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- 05 이번 주 K-바이오 모달리티 심층 — RNA 편집 전쟁 -->
+    <div class="sec">
+      <div class="sec-head">
+        <span class="sec-num">05</span>
+        <h2 class="sec-title">2026 RNA 편집 전쟁 — 알지노믹스 trans-splicing, 에스티팜 siRNA·saRNA, 올릭스 RNAi의 경쟁 구도</h2>
+        <span class="badge b-purple">RNA 편집 · siRNA · trans-splicing · 모달리티</span>
+      </div>
+      <div class="banner ban-times"><div class="bdot"></div>이넷뉴스 · DB증권 · 전국인력신문 분석 종합</div>
+      <div class="card">
+        <div class="card-head">
+          <div class="card-title">RNA 치료제 3대 전략 비교 — 침묵(siRNA/RNAi) vs 활성화(saRNA) vs 교정(trans-splicing ribozyme)</div>
+          <span class="badge b-purple">RNA 모달리티 비교</span>
+        </div>
+        <div class="card-body">
+          2026년 K-바이오 RNA 치료제는 크게 세 전략으로 경쟁한다. ① <strong>siRNA/RNAi (올릭스·에스티팜):</strong> RISC 복합체를 통해 표적 mRNA를 분해, 단백질 발현 침묵. 간 표적 GalNAc 결합체가 표준이며 올릭스는 비간 조직(지방·CNS)으로 확장 중(OASIS 2.0). ② <strong>saRNA (에스티팜):</strong> small activating RNA로 표적 유전자의 전사를 활성화, 손실기능(LOF) 질환에 적합. ③ <strong>trans-splicing ribozyme (알지노믹스):</strong> 변이 pre-mRNA의 손상된 엑손 부위를 정상 서열로 통째로 교체. CRISPR과 달리 DNA를 건드리지 않아 유전체 영구 변형 위험 없음. 알지노믹스는 코스닥 상장 전 글로벌 제약사에 2조원 규모 기술이전을 성사했다.
+          <br><br>
+          <strong>참고:</strong> Setten <em>et al., Nat Rev Drug Discov</em> 2019; siRNA therapeutics / Dana <em>et al., Cell Mol Life Sci</em> 2017; saRNA gene activation
+        </div>
+        <div class="card-foot">출처: 이넷뉴스 · DB증권 · 전국인력신문 (2026.05)</div>
+      </div>
+      <div class="card">
+        <div class="card-head">
+          <div class="card-title">FDA Continuous Trial 파일럿 2026년 여름 개시 — Phase 1/2/3 경계 제거, K-바이오 소규모 바이오텍 임상 가속</div>
+          <span class="badge b-teal">FDA 규제 혁신 · Continuous Trial</span>
+        </div>
+        <div class="card-body">
+          FDA 마카리 국장이 예고한 Continuous Trial 파일럿 프로그램이 2026년 여름 개시 예정이다. 현행 Phase 1→2→3 사이 IND 재제출·휴지기를 제거하고, 적응적 설계로 용량·적응증을 연속 조정하는 체계다. 미국의 pre-IND→IND 평균 소요 기간이 380일로 중국(220일)보다 70% 이상 길어 초기 임상이 중국·호주로 이전되는 추세를 차단하려는 목적이 명확하다. 희귀 유전질환·자가면역·만성질환 영역 소규모 바이오텍이 주요 수혜 대상이며, 국내 희귀질환 전문 바이오텍의 미국 직접 임상 전략에도 긍정적인 변화가 예상된다.
+        </div>
+        <div class="card-foot">출처: 미래에셋증권 제약/바이오 리포트 (2026.05.05)</div>
+      </div>
+    </div>
+
+  </main>
+
+</div><!-- /may17 -->
+
+<!-- ════════════════════════════════════════
      MAY 16 PANEL  ★ 연구자 중심
 ════════════════════════════════════════ -->
-<div id="may16" class="tab-panel active">
+<div id="may16" class="tab-panel">
 
   <div class="stats-bar">
     <div class="stats-grid">
@@ -2605,7 +2770,7 @@ hr{border:none;border-top:1px solid var(--border);margin:2rem 0}
 <footer class="footer">
   <div class="footer-inner">
     <div class="footer-title">K-바이오 Daily Report</div>
-    <div class="footer-meta">VOL.8–22 · 2026.05.02–16 · VOL.20~부터 연구자 중심 형식</div>
+    <div class="footer-meta">VOL.8–23 · 2026.05.02–17 · VOL.20~부터 연구자 중심 형식</div>
     <div class="footer-pills">
       <span class="fp">더바이오</span><span class="fp">히트뉴스</span>
       <span class="fp">데일리팜</span><span class="fp">팜이데일리</span>
