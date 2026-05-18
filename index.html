@@ -161,8 +161,12 @@ hr{border:none;border-top:1px solid var(--border);margin:2rem 0}
   </div>
   <!-- DATE TABS -->
   <div class="tab-bar">
-    <button class="tab-btn active" onclick="switchTab('may17', this)">
-      <span class="tab-date">5월 17일 (일)<span class="tab-new">NEW</span></span>
+    <button class="tab-btn active" onclick="switchTab('may18', this)">
+      <span class="tab-date">5월 18일 (월)<span class="tab-new">NEW</span></span>
+      <span class="tab-sub">VOL.24 · 5개 이슈</span>
+    </button>
+    <button class="tab-btn" onclick="switchTab('may17', this)">
+      <span class="tab-date">5월 17일 (일)</span>
       <span class="tab-sub">VOL.23 · 5개 이슈</span>
     </button>
     <button class="tab-btn" onclick="switchTab('may16', this)">
@@ -229,9 +233,180 @@ hr{border:none;border-top:1px solid var(--border);margin:2rem 0}
 </header>
 
 <!-- ════════════════════════════════════════
+     MAY 18 PANEL  ★ 연구자 중심
+════════════════════════════════════════ -->
+<div id="may18" class="tab-panel active">
+
+  <div class="stats-bar">
+    <div class="stats-grid">
+      <div class="stat-cell"><div class="stat-val">알지노믹스</div><div class="stat-lbl">오늘 코스닥 상장 — trans-splicing RNA 편집</div></div>
+      <div class="stat-cell"><div class="stat-val">VOLGA 3상</div><div class="stat-lbl">AZ 임핀지+EV — 근침습 방광암 EFS 개선</div></div>
+      <div class="stat-cell"><div class="stat-val">BCL2 차세대</div><div class="stat-lbl">베칼지 소노로토클락스 MCL FDA 가속승인</div></div>
+      <div class="stat-cell"><div class="stat-val">ASCO D-11</div><div class="stat-lbl">5.24 LEQEMBI PDUFA D-6</div></div>
+    </div>
+  </div>
+
+  <main class="main">
+
+    <!-- 01 알지노믹스 코스닥 상장 — RNA 편집 trans-splicing -->
+    <div class="sec">
+      <div class="sec-head">
+        <span class="sec-num">01</span>
+        <h2 class="sec-title">알지노믹스 오늘 코스닥 상장 — trans-splicing ribozyme RNA 편집, 상장 전 글로벌 2조원 기술이전 성사</h2>
+        <span class="badge b-accent">오늘 상장 · RNA 편집</span>
+      </div>
+      <div class="banner ban-bios"><div class="bdot"></div>DB증권 · 바이오위클리 보도 (2026.05.18)</div>
+      <div class="dark-card">
+        <div class="dk-tag">KOSDAQ IPO · RNA EDITING · TRANS-SPLICING</div>
+        <div class="dk-title">알지노믹스, 오늘(5.18) 코스닥 상장 — 상장 전 글로벌 제약사 2조원 기술이전, ASCO RZ-001 간암 1상 발표 예정</div>
+        <div class="dk-body">알지노믹스가 오늘 코스닥에 상장된다. 알지노믹스의 핵심 기술은 trans-splicing ribozyme(TSR) 기반 RNA 편집으로, 변이 pre-mRNA의 손상된 엑손 부위를 정상 서열로 통째로 교체하는 방식이다. CRISPR와 달리 DNA를 영구 변형하지 않아 삽입 변이(insertional mutagenesis) 위험이 없으며, 동일 유전자의 다양한 변이에 단일 플랫폼으로 대응 가능하다. 상장 전 이미 글로벌 제약사와 약 2조원 규모의 기술이전 계약을 체결했으며, 5월 29일 ASCO에서 간암 유전자치료제 RZ-001의 임상 1상 후속 데이터를 구두 발표할 예정이다.</div>
+        <div class="dk-stats">
+          <div class="dks"><div class="dks-val">~2조원</div><div class="dks-lbl">상장 전<br>기술이전 규모</div></div>
+          <div class="dks"><div class="dks-val">TSR 플랫폼</div><div class="dks-lbl">DNA 비변형<br>RNA 수준 교정</div></div>
+          <div class="dks"><div class="dks-val">ASCO D-11</div><div class="dks-lbl">RZ-001 간암<br>1상 데이터 발표</div></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-head">
+          <div class="card-title">RZ-001 간암 유전자치료제 MOA — AFP(알파태아단백) 변이 mRNA 교정 + 세포독성 유도</div>
+          <span class="badge b-purple">MOA · 간암 · RNA 교정</span>
+        </div>
+        <div class="card-body">
+          RZ-001은 간세포암(HCC)에서 과발현되는 AFP(α-fetoprotein) mRNA를 trans-splicing ribozyme으로 교정해 세포독성 유전자(diphtheria toxin A, HSV-TK 등)로 치환함으로써 AFP 양성 간암 세포를 선택적으로 사멸시키는 전략이다. 정상 간세포는 AFP 발현이 없으므로 선택적 독성이 이론상 확보된다. AACR 2026에서 이미 임상 1상 중간 데이터를 구두 발표해 글로벌 주목을 받았으며, ASCO 후속 데이터에서 ORR·안전성 확장 코호트 결과가 공개될 예정이다.
+          <br><br>
+          <strong>MOA:</strong> AAV 전달 → 종양 내 AFP mRNA + TSR ribozyme → trans-splicing 반응 → 독소 유전자 mRNA 생성 → 번역 → 세포사멸 (AFP 음성 정상세포 보호)
+          <br><strong>참고:</strong> Rhim <em>et al., Hepatology</em> 2022; AFP-targeted trans-splicing in HCC
+        </div>
+        <div class="card-foot">출처: DB증권 · 바이오위클리 (2026.05.18)</div>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- 02 AZ 임핀지+EV VOLGA 3상 방광암 -->
+    <div class="sec">
+      <div class="sec-head">
+        <span class="sec-num">02</span>
+        <h2 class="sec-title">AZ 임핀지+엔포르투맙 베도틴 VOLGA 3상 — 근침습성 방광암 수술 전 병용, EFS 통계적 유의성 달성</h2>
+        <span class="badge b-success">PD-L1 + Nectin-4 ADC · MIBC · 3상</span>
+      </div>
+      <div class="banner ban-bios"><div class="bdot"></div>더바이오 보도 (2026.05.14)</div>
+      <div class="hl green">
+        <div class="hl-title">근침습성 방광암 수술 전 면역항암제+ADC 병용 — EFS(무사건 생존율) 통계적 유의성 달성</div>
+        <div class="hl-body">AZ의 더발루맙(임핀지, PD-L1 항체)과 엔포르투맙 베도틴(EV, Nectin-4 타깃 ADC)을 근침습성 방광암(MIBC) 수술 전 신보조 병용요법으로 투여한 임상 3상 VOLGA에서 무사건 생존율(EFS)이 통계적 유의성을 달성했다. 독립 데이터모니터링위원회(DSMB)는 연구 계속 진행 및 이중맹검 유지를 권고했다.</div>
+      </div>
+      <div class="card">
+        <div class="card-head">
+          <div class="card-title">PD-L1 + Nectin-4 ADC 병용 근거 — 면역관문 해제 + 세포자멸 유도의 시너지 기전</div>
+          <span class="badge b-success">MOA · PD-L1 · Nectin-4 · MMAE</span>
+        </div>
+        <div class="card-body">
+          엔포르투맙 베도틴(EV)은 Nectin-4(요로상피암에서 과발현) 타깃 ADC로, 페이로드는 미세소관 중합 억제제 MMAE다. Nectin-4 발현 암세포에 MMAE를 선택적으로 전달해 유사분열 중지와 세포사멸을 유도한다. 더발루맙(PD-L1 차단)은 T세포 소진 억제로 항종양 면역을 복원하며, MMAE에 의한 면역원성 세포사멸(ICD)과 결합해 시너지를 낼 수 있다. 방광암은 Nectin-4 과발현율이 높고 PD-L1 발현도 빈번해 이 조합의 기전적 합리성이 높다. EV는 이미 전이성 방광암 2차 치료(펨브롤리주맙 병용)로 FDA 승인을 받은 바 있어 MIBC 1차 신보조로의 확장이 의미 있다.
+          <br><br>
+          <strong>참고:</strong> Powles <em>et al., Lancet</em> 2021; EV-301 3상 / Hoimes <em>et al., J Clin Oncol</em> 2022; EV+pembro
+        </div>
+        <div class="card-foot">출처: 더바이오 (2026.05.14)</div>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- 03 베칼지(소노로토클락스) BCL2 차세대 FDA 가속승인 -->
+    <div class="sec">
+      <div class="sec-head">
+        <span class="sec-num">03</span>
+        <h2 class="sec-title">베칼지(소노로토클락스) — 차세대 BCL2 억제제, 재발·불응 외투세포림프종 FDA 가속승인</h2>
+        <span class="badge b-purple">BCL2 억제제 · MCL · FDA 가속승인</span>
+      </div>
+      <div class="card">
+        <div class="card-head">
+          <div class="card-title">소노로토클락스(BEQALZI) vs 베네토클락스 — 선택성·내성 극복 개선된 차세대 BCL2 BH3 미메틱</div>
+          <span class="badge b-purple">MOA · BCL2 · BH3 미메틱 · 내성</span>
+        </div>
+        <div class="card-body">
+          비원메디슨(BeOne Medicines)의 소노로토클락스(sonrotoclax, BGB-11417)가 재발·불응성 외투세포림프종(MCL) 대상 FDA 가속승인을 획득했다. 기존 BCL2 억제제 베네토클락스(venetoclax)와 같은 BH3 미메틱 계열이지만, BCL2 단백질의 BH3 결합 홈에 더 높은 선택성(BCL-XL 최소 결합)과 친화성으로 결합해 혈소판 독성(thrombocytopenia)이 낮다. 또한 베네토클락스 내성의 주요 기전인 BCL2 G101V 변이에서도 활성을 유지한다. MCL은 BTK 억제제(이브루티닙) 치료 후 베네토클락스 내성이 문제가 되는 적응증이다.
+          <br><br>
+          <strong>MOA:</strong> BCL2 BH3 결합홈 고선택적 결합 → BAX/BAK 방출 → 미토콘드리아 외막 투과화(MOMP) → Caspase 활성화 → 내인성 세포자멸사 / BCL-XL 비결합 → 혈소판 독성 최소화
+          <br><strong>참고:</strong> Souers <em>et al., Nat Med</em> 2013; venetoclax / Tse <em>et al., Blood</em> 2023; sonrotoclax preclinical
+        </div>
+        <div class="card-foot">출처: 더바이오 (2026.05.14)</div>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- 04 알테오젠 아이젠피주 + 대웅 펙수클루 H.pylori + 오스코텍 마일스톤 -->
+    <div class="sec">
+      <div class="sec-head">
+        <span class="sec-num">04</span>
+        <h2 class="sec-title">알테오젠 아이젠피주(애플리버셉트 BS) 국내 허가 + 대웅 펙수클루 H.pylori 3상 항생제 내성 우위</h2>
+        <span class="badge b-success">바이오시밀러 · P-CAB · 항생제 내성</span>
+      </div>
+      <div class="card">
+        <div class="card-head">
+          <div class="card-title">알테오젠 ALT-L9(아이젠피주) — VEGF-A/B·PlGF 동시 차단 애플리버셉트 바이오시밀러, 국내 품목허가</div>
+          <span class="badge b-info">VEGF 트랩 · 망막질환 · 바이오시밀러</span>
+        </div>
+        <div class="card-body">
+          알테오젠의 아일리아(애플리버셉트) 바이오시밀러 ALT-L9(아이젠피주)가 식약처 품목허가를 취득했다. 애플리버셉트는 VEGFR1·VEGFR2 세포외 도메인과 IgG1 Fc를 융합한 재조합 단백질(VEGF 트랩)로, VEGF-A·VEGF-B·PlGF(태반성장인자)를 동시에 높은 친화성으로 포획한다. 습성 황반변성(wAMD), 당뇨병성 황반부종(DME), 망막정맥폐쇄(RVO)에 투여된다. ALT-L9는 지난해 유럽에서 이미 '아이럭스비(Ireluxby)'로 허가를 받았다.
+        </div>
+        <div class="card-foot">출처: 더바이오 (2026.05.15)</div>
+      </div>
+      <div class="card">
+        <div class="card-head">
+          <div class="card-title">대웅 펙수클루(펙수프라잔) H.pylori 3상 — 클래리트로마이신 내성군에서 대조군 대비 제균율 26%p 우위</div>
+          <span class="badge b-success">P-CAB · H.pylori 제균 · 항생제 내성</span>
+        </div>
+        <div class="card-body">
+          대웅제약의 P-CAB(포타슘 경쟁적 위산분비억제제) 펙수프라잔(펙수클루)이 H.pylori 제균 임상 3상에서 기존 PPI 기반 3중 요법 대비 비열등성을 입증했다. 특히 클래리트로마이신 내성 보유 환자군에서 대조군보다 약 26%p 높은 제균율로 통계적 우월성을 확보했다. P-CAB은 PPI와 달리 산성 조건에서 즉시 활성화되어 야간 위산 분비 억제가 우수하고 CYP2C19 다형성에 영향을 받지 않아 항생제 혈중 농도를 일정하게 유지할 수 있다. 클래리트로마이신 내성 H.pylori는 국내 30% 이상, 일부 지역에서 40% 이상으로 높아 임상적 의미가 크다.
+          <br><br>
+          <strong>MOA:</strong> P-CAB → H⁺/K⁺-ATPase 포타슘 경쟁적 가역 결합 → 즉각적·지속적 위산 억제 → 항생제 안정성 향상 → 내성균 포함 제균율 개선
+        </div>
+        <div class="card-foot">출처: 더바이오 (2026.05.18)</div>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- 05 AZ-Owkin 에이전트 AI + 오스코텍 마일스톤 + 입센 코라보타제 RNI -->
+    <div class="sec">
+      <div class="sec-head">
+        <span class="sec-num">05</span>
+        <h2 class="sec-title">AZ-Owkin 에이전트형 AI 신약 플랫폼 + 입센 코라보타제 WHO 신규 약물 계열 RNI 지정</h2>
+        <span class="badge b-teal">AI 신약 · 보툴리눔 · 신규 계열</span>
+      </div>
+      <div class="card">
+        <div class="card-head">
+          <div class="card-title">AZ × Owkin — 에이전트형(agentic) AI로 표적·임상·경쟁 파이프라인 실시간 분석·예측 플랫폼 구축</div>
+          <span class="badge b-teal">AI 신약 개발 · Agentic AI</span>
+        </div>
+        <div class="card-body">
+          아스트라제네카(AZ)가 AI 바이오기업 오우킨(Owkin)과 신약 개발 의사결정용 에이전트형 AI 플랫폼 구축에 나선다. 기존 AI 모델이 단일 태스크(후보물질 구조 예측 등)에 특화됐다면, 에이전트형 AI는 특정 표적의 생물학·기존 임상시험 실패 원인·경쟁 파이프라인 구도·환자 계층화 바이오마커를 스스로 탐색·분석·예측하는 자율적 의사결정 체계다. Owkin은 연합학습(federated learning) 기반으로 병원 데이터를 직접 이전하지 않고 모델을 훈련하는 기술을 보유하고 있어 GDPR·HIPAA 준수 AI 학습이 가능하다.
+          <br><br>
+          <strong>참고:</strong> Lotfi <em>et al., Nat Med</em> 2023; federated learning in clinical AI
+        </div>
+        <div class="card-foot">출처: 더바이오 (2026.05.14)</div>
+      </div>
+      <div class="card">
+        <div class="card-head">
+          <div class="card-title">입센 코라보타제(IPN10200) — WHO·USAN, '재조합 신경억제제(RNI)' 신규 약물 계열로 공식 지정</div>
+          <span class="badge b-purple">재조합 보툴리눔 · RNI · 신규 계열</span>
+        </div>
+        <div class="card-body">
+          입센(Ipsen)의 코라보타제(corabotase, IPN10200)가 WHO와 USAN으로부터 '재조합 신경억제제(Recombinant Neuro-Inhibitor, RNI)'라는 신규 약물 계열로 공식 지정됐다. 기존 보툴리눔 독소(BoNT)는 Clostridium botulinum에서 추출한 천연 독소를 정제·희석해 사용하며, 독소 복합체(complex proteins)가 함께 투여된다. 코라보타제는 재조합 기술로 SNAP-25를 절단하는 경쇄(light chain)만 선택적으로 제조해 면역원성·로트 간 변동성을 줄이고, 표적 신경 말단에 더 정밀하게 전달되도록 설계됐다. 근긴장이상증·미용·통증 분야에서 기존 BoNT 제품과 차별화된 포지셔닝이 기대된다.
+        </div>
+        <div class="card-foot">출처: 더바이오 (2026.05.14)</div>
+      </div>
+    </div>
+
+  </main>
+
+</div><!-- /may18 -->
+
+<!-- ════════════════════════════════════════
      MAY 17 PANEL  ★ 연구자 중심
 ════════════════════════════════════════ -->
-<div id="may17" class="tab-panel active">
+<div id="may17" class="tab-panel">
 
   <div class="stats-bar">
     <div class="stats-grid">
@@ -2770,7 +2945,7 @@ hr{border:none;border-top:1px solid var(--border);margin:2rem 0}
 <footer class="footer">
   <div class="footer-inner">
     <div class="footer-title">K-바이오 Daily Report</div>
-    <div class="footer-meta">VOL.8–23 · 2026.05.02–17 · VOL.20~부터 연구자 중심 형식</div>
+    <div class="footer-meta">VOL.8–24 · 2026.05.02–18 · VOL.20~부터 연구자 중심 형식</div>
     <div class="footer-pills">
       <span class="fp">더바이오</span><span class="fp">히트뉴스</span>
       <span class="fp">데일리팜</span><span class="fp">팜이데일리</span>
